@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>.pro</string>
+		<string>pro</string>
 	</array>
 	<key>isDisabled</key>
 	<false/>
@@ -1077,7 +1077,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.matlab</string>
+					<string>punctuation.definition.string.begin.idl</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -1087,11 +1087,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.matlab</string>
+					<string>punctuation.definition.string.end.idl</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.matlab</string>
+			<string>string.quoted.idl</string>
 			<key>patterns</key>
 			<array>
 				<dict>
