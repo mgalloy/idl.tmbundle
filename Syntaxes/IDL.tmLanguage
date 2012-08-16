@@ -129,7 +129,7 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#all_matlab_keywords</string>
+			<string>#all_idl_keywords</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -197,7 +197,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>all_matlab_keywords</key>
+		<key>all_idl_keywords</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -215,27 +215,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#matlab_storage_modifier</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#idl_sysvar_language</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#matlab_keyword_desktop</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#matlab_keyword_mathematics</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#matlab_keyword_analysis</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#matlab_storage_control</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -435,51 +415,6 @@
 			<string>\![A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z_][A-Za-z0-9_]*)*</string>
 			<key>name</key>
 			<string>constant.language.idl</string>
-		</dict>
-		<key>matlab_keyword_analysis</key>
-		<dict>
-			<key>comment</key>
-			<string>Data Analysis</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(abs|addevent|addsample|addsampletocollection|addts|angle|conv|conv2|convn|corrcoef|cov|cplxpair|ctranspose|cumtrapz|deconv|del2|delevent|delsample|delsamplefromcollection|detrend|diff|fft|fft2|fftn|fftshift|fftw|filter|filter2|getabstime|getdatasamplesize|getinterpmethod|getqualitydesc|getsampleusingtime|gettimeseriesnames|gettsafteratevent|gettsafterevent|gettsatevent|gettsbeforeatevent|gettsbeforeevent|gettsbetweenevents|gradient|idealfilter|ifft|ifft2|ifftn|ifftshift|iqr|max|mean|median|min|mldivide|mode|mrdivide|removets|resample|setabstime|setinterpmethod|settimeseriesnames|std|synchronize|timeseries|trapz|tscollection|tsdata.event|tsprops|tstool|var)\b</string>
-			<key>name</key>
-			<string>keyword.analysis.matlab</string>
-		</dict>
-		<key>matlab_keyword_desktop</key>
-		<dict>
-			<key>comment</key>
-			<string>Desktop Tools and Development</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(addpath|assignin|builddocsearchdb|cd|checkin|checkout|clc|clear|clipboard|cmopts|commandhistory|commandwindow|computer|copyfile|customverctrl|dbclear|dbcont|dbdown|dbquit|dbstack|dbstatus|dbstep|dbstop|dbtype|dbup|debug|demo|diary|dir|doc|docopt|docsearch|dos|echodemo|edit|exit|fileattrib|filebrowser|finish|format|genpath|getenv|grabcode|help|helpbrowser|helpwin|home|hostid|info|keyboard|license|lookfor|ls|matlab|matlabrc|matlabroot|memory|mkdir|mlint|mlintrpt|more|movefile|notebook|openvar|pack|partialpath|path|path2rc|pathdef|pathsep|pathtool|perl|playshow|prefdir|preferences|profile|profsave|publish|pwd|quit|recycle|rehash|restoredefaultpath|rmdir|rmpath|savepath|setenv|startup|support|system|toolboxdir|type|undocheckout|unix|ver|verctrl|verLessThan|version|web|what|whatsnew|which|winqueryreg|workspace)\b|(^\s*!.*$)</string>
-			<key>name</key>
-			<string>keyword.desktop.matlab</string>
-		</dict>
-		<key>matlab_keyword_mathematics</key>
-		<dict>
-			<key>comment</key>
-			<string>Mathematics</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(accumarray|acos|acosd|acosh|acot|acotd|acoth|acsc|acscd|acsch|airy|amd|asec|asecd|asech|asin|asind|asinh|atan|atan2|atand|atanh|balance|besselh|besseli|besselj|besselk|bessely|beta|betainc|betaln|bicg|bicgstab|blkdiag|bsxfun|bvp4c|bvpget|bvpinit|bvpset|bvpxtend|cart2pol|cart2sph|cat|cdf2rdf|ceil|cgs|chol|cholinc|cholupdate|circshift|colamd|colperm|compan|complex|cond|condeig|condest|conj|convhull|convhulln|cos|cosd|cosh|cot|cotd|coth|cross|csc|cscd|csch|cumprod|cumsum|dblquad|dde23|ddeget|ddesd|ddeset|decic|det|deval|diag|disp|display|dmperm|dot|eig|eigs|ellipj|ellipke|erf|erfc|erfcinv|erfcx|erfinv|etree|etreeplot|exp|expint|expm|expm1|eye|factor|factorial|find|fix|flipdim|fliplr|flipud|floor|fminbnd|fminsearch|freqspace|full|funm|fzero|gallery|gamma|gammainc|gammaln|gcd|gmres|gplot|griddata|griddata3|griddatan|gsvd|hadamard|hankel|hess|hilb|horzcat|hypot|i|idivide|ilu|imag|ind2sub|Inf|inline|interp1|interp1q|interp2|interp3|interpft|interpn|inv|invhilb|ipermute|j|kron|lcm|ldl|legendre|length|linsolve|linspace|log|log10|log1p|log2|logm|logspace|lscov|lsqnonneg|lsqr|lu|luinc|magic|meshgrid|minres|mkpp|mod|NaN|nchoosek|ndgrid|ndims|nextpow2|nnz|nonzeros|norm|normest|nthroot|null|numel|nzmax|ode113|ode15i|ode15s|ode23|ode23s|ode23t|ode23tb|ode45|odefile|odeget|odeset|odextend|ones|optimget|optimset|ordeig|ordqz|ordschur|orth|pascal|pcg|pchip|pdepe|pdeval|perms|permute|pi|pinv|planerot|pol2cart|poly|polyder|polyeig|polyfit|polyint|polyval|polyvalm|pow2|ppval|primes|prod|psi|qmr|qr|qrdelete|qrinsert|qrupdate|quad|quadl|quadv|qz|rand|randn|randperm|rank|rat|rats|rcond|real|reallog|realpow|realsqrt|rem|repmat|reshape|residue|roots|rosser|rot90|round|rref|rsf2csf|schur|sec|secd|sech|shiftdim|sign|sin|sind|sinh|size|sort|sortrows|spalloc|sparse|spaugment|spconvert|spdiags|speye|spfun|sph2cart|spline|spones|spparms|sprand|sprandn|sprandsym|sprank|spy|sqrt|sqrtm|squeeze|ss2tf|sub2ind|subspace|sum|svd|svds|symamd|symbfact|symmlq|symrcm|tan|tand|tanh|toeplitz|trace|treelayout|treeplot|tril|triplequad|triu|unmkpp|unwrap|vander|vectorize|vertcat|wilkinson|zeros)\b</string>
-			<key>name</key>
-			<string>keyword.mathematics.matlab</string>
-		</dict>
-		<key>matlab_storage_control</key>
-		<dict>
-			<key>comment</key>
-			<string>File I/O</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(addframe|ascii|audioplayer|audiorecorder|aufinfo|auread|auwrite|avifile|aviinfo|aviread|beep|binary|cdfepoch|cdfinfo|cdfread|cdfwrite|csvread|csvwrite|daqread|dlmread|dlmwrite|exifread|fclose|feof|ferror|fgetl|fgets|filehandle|filemarker|fileparts|filesep|fitsinfo|fitsread|fopen|fprintf|fread|frewind|fscanf|fseek|ftell|ftp|fullfile|fwrite|gunzip|gzip|hdf|hdf5|hdf5info|hdf5read|hdf5write|hdfinfo|hdfread|hdftool|imfinfo|importdata|imread|imwrite|lin2mu|load|memmapfile|mget|mmfileinfo|movie2avi|mput|mu2lin|multibandread|multibandwrite|open|rename|save|sendmail|sound|soundsc|tar|tempdir|tempname|textread|textscan|todatenum|uiimport|untar|unzip|urlread|urlwrite|wavfinfo|wavplay|wavread|wavrecord|wavwrite|winopen|wk1finfo|wk1read|wk1write|xlsfinfo|xlsread|xlswrite|xmlread|xmlwrite|xslt|zip)\b</string>
-			<key>name</key>
-			<string>storage.control.matlab</string>
-		</dict>
-		<key>matlab_storage_modifier</key>
-		<dict>
-			<key>comment</key>
-			<string>Storage modifiers</string>
-			<key>match</key>
-			<string>(?&lt;!\.)\b(base2dec|bin2dec|cast|cell2mat|cell2struct|cellstr|char|dec2base|dec2bin|dec2hex|hex2dec|hex2num|int2str|mat2cell|mat2str|num2cell|native2unicode|num2hex|num2str|persistent|str2double|str2func|str2mat|str2num|struct2cell|unicode2native)\b</string>
-			<key>name</key>
-			<string>storage.modifier.matlab</string>
 		</dict>
 		<key>not_equal_invalid</key>
 		<dict>
