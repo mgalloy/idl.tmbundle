@@ -86,9 +86,12 @@
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword.operator, keyword.operator.idl</string>
 			<key>settings</key>
-			<dict/>
+			<dict>
+				<key>foreground</key>
+				<string>#0000FF</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -105,9 +108,12 @@
 			<key>name</key>
 			<string>Storage</string>
 			<key>scope</key>
-			<string>storage</string>
+			<string>storage.type, storage.type.idl</string>
 			<key>settings</key>
-			<dict/>
+			<dict>
+				<key>foreground</key>
+				<string>#7F0000</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -129,9 +135,12 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function</string>
+			<string>entity.name.function, entity.name.function.idl</string>
 			<key>settings</key>
-			<dict/>
+			<dict>
+				<key>foreground</key>
+				<string>#00C0C0</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>name</key>

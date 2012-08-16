@@ -30,26 +30,26 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>storage.type.idl</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.output.function.matlab</string>
+					<string>variable.parameter.output.function.idl</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.output.function.matlab</string>
+					<string>variable.parameter.output.function.idl</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.matlab</string>
+					<string>entity.name.function.idl</string>
 				</dict>
 			</dict>
 			<key>contentName</key>
-			<string>variable.parameter.input.function.matlab</string>
+			<string>variable.parameter.input.function.idl</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>endCaptures</key>
@@ -57,11 +57,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.parameters.matlab</string>
+					<string>punctuation.definition.parameters.idl</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.with-arguments.matlab</string>
+			<string>meta.function.with-arguments.idl</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -69,27 +69,27 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>storage.type.idl</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.matlab</string>
+					<string>storage.type.idl</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.output.function.matlab</string>
+					<string>variable.parameter.output.function.idl</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.output.function.matlab</string>
+					<string>variable.parameter.output.function.idl</string>
 				</dict>
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.matlab</string>
+					<string>entity.name.function.idl</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -101,7 +101,7 @@
 (?&gt;\s*=\s*)?
 ((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*(::[a-zA-Z_][a-zA-Z_$0-9]*)?(?&gt;[?!]|=(?!&gt;))? )) # the function name</string>
 			<key>name</key>
-			<string>meta.function.without-arguments.matlab</string>
+			<string>meta.function.without-arguments.idl</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -396,7 +396,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(begin|break|case|catch|common|compile_opt|continue|do|else|end|for|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile|foreach|forward_function|goto|if|inherits|of|repeat|return|stop|switch|then|until|while)\b</string>
+			<string>(?&lt;!\.)\b(begin|break|case|catch|common|compile_opt|continue|do|else|end|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile|for|foreach|forward_function|goto|if|inherits|of|repeat|return|stop|switch|then|until|while)\b</string>
 			<key>name</key>
 			<string>keyword.control.idl</string>
 		</dict>
@@ -405,7 +405,7 @@
 			<key>comment</key>
 			<string>Operator keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\b</string>
+			<string>(?&lt;!\.)+\b(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\b</string>
 			<key>name</key>
 			<string>keyword.operator.idl</string>
 		</dict>
