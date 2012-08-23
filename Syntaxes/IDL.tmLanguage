@@ -193,6 +193,20 @@
 							<key>name</key>
 							<string>comment.line.semicolon.idl</string>
 						</dict>
+						<dict>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>meta.toc-list.banner.line.idl</string>
+								</dict>
+							</dict>
+							<key>match</key>
+							<string>^;=\s*(.*?)\s*$\n?</string>
+							<key>name</key>
+							<string>comment.line.banner.idl</string>
+						</dict>
 					</array>
 				</dict>
 			</array>
@@ -367,7 +381,7 @@
 					<key>match</key>
 					<string>''</string>
 					<key>name</key>
-					<string>constant.character.escape.matlab</string>
+					<string>constant.character.escape.idl</string>
 				</dict>
 			</array>
 		</dict>
