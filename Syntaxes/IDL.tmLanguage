@@ -163,6 +163,20 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.toc-list.banner.line.idl</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>^;=\s*(.*?)\s*$\n?</string>
+					<key>name</key>
+					<string>comment.line.banner.idl</string>
+				</dict>
+				<dict>
 					<key>begin</key>
 					<string>(^[ \t]+)?(?=;)</string>
 					<key>beginCaptures</key>
@@ -192,20 +206,6 @@
 							<string>\n</string>
 							<key>name</key>
 							<string>comment.line.semicolon.idl</string>
-						</dict>
-						<dict>
-							<key>captures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>meta.toc-list.banner.line.idl</string>
-								</dict>
-							</dict>
-							<key>match</key>
-							<string>^;=\s*(.*?)\s*$\n?</string>
-							<key>name</key>
-							<string>comment.line.banner.idl</string>
 						</dict>
 					</array>
 				</dict>
@@ -492,6 +492,31 @@
 					<string>#end_in_parens</string>
 				</dict>
 			</array>
+		</dict>
+		<key>pragma-mark</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.preprocessor.c</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.pragma.c</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>meta.toc-list.pragma-mark.c</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(#\s*(pragma\s+mark)\s+(.*))</string>
+			<key>name</key>
+			<string>meta.section</string>
 		</dict>
 		<key>special_characters</key>
 		<dict>
