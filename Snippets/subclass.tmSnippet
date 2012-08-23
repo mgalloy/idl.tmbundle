@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>; docformat = 'rst'
+
+;+
+; :Properties:
+;    _extra
+;       properties from $2
+;
+; :Author:
+;    $TM_FULLNAME
+;-
+
+
+;+
+; Set properties.
+;-
+pro $1::setProperty, _extra=e
+  compile_opt strictarr
+
+  if (n_elements(e) gt 0L) then self-&gt;$2::setProperty, _extra=e
+end
+
+
+;+
+; Get properties.
+;-
+pro $1::getProperty, _ref_extra=e
+  compile_opt strictarr
+
+  if (n_elements(e) gt 0L) then self-&gt;$2::getProperty, _extra=e
+end
+
+
+;+
+; Instantiate $1 object.
+;
+; :Returns:
+;    1 for success, 0 for failure
+;-
+function $1::init, _extra=e
+  compile_opt strictarr
+
+  if (~self-&gt;$2::init(_extra=e)) then return, 0
+
+  return, 1
+end
+
+
+;+
+; Define instance variables.
+;-
+pro $1__define
+  compile_opt strictarr
+
+  define = { $1, inherits $2$0 }
+end</string>
+	<key>name</key>
+	<string>subclass</string>
+	<key>scope</key>
+	<string>source.idl</string>
+	<key>tabTrigger</key>
+	<string>subclass</string>
+	<key>uuid</key>
+	<string>DE5E1931-722E-4CF3-B9A1-741B02722B14</string>
+</dict>
+</plist>

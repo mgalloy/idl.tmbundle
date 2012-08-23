@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>; docformat = 'rst'
+
+;+
+; :Properties:
+;    
+; :Author:
+;    $TM_FULLNAME
+;-
+
+
+;+
+; Set properties.
+;-
+pro $1::setProperty
+  compile_opt strictarr
+
+end
+
+
+;+
+; Get properties.
+;-
+pro $1::getProperty
+  compile_opt strictarr
+
+end
+
+
+;+
+; Instantiate $1 object.
+;
+; :Returns:
+;    1 for success, 0 for failure
+;-
+function $1::init
+  compile_opt strictarr
+
+  return, 1
+end
+
+
+;+
+; Define instance variables.
+; 
+; :Fields:
+;   $2
+;-
+pro $1__define
+  compile_opt strictarr
+
+  define = { $1, $2$0 }
+end</string>
+	<key>name</key>
+	<string>class</string>
+	<key>scope</key>
+	<string>source.idl</string>
+	<key>tabTrigger</key>
+	<string>class</string>
+	<key>uuid</key>
+	<string>8B316ACB-BAFF-4F77-8C25-652AE1A65729</string>
+</dict>
+</plist>
