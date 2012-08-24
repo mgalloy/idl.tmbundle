@@ -3,22 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>;+
-; $1
-;-
-pro $2
-  compile_opt strictarr
-
-  ${0|; TODO: implement|}
-end
+	<string>if ($1) then begin
+  ${2|; TODO: implement|}
+endif$0
 </string>
 	<key>name</key>
-	<string>procedure</string>
+	<string>if statement</string>
 	<key>scope</key>
 	<string>source.idl</string>
 	<key>tabTrigger</key>
-	<string>pro</string>
+	<string>if</string>
 	<key>uuid</key>
-	<string>4EBD3851-584B-46EB-AA3A-A3BDD3C28495</string>
+	<string>A7ACB52C-D15D-45C7-ABBD-1B3053EE2B59</string>
 </dict>
 </plist>

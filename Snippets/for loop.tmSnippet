@@ -3,24 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>;+
-; $1
-;
-; :Returns:
-;    $2
-;-
-function $3
-  compile_opt strictarr
-
-  $0
-end</string>
+	<string>for $1 = $2, $3 do begin
+  ${4|; TODO: implement|}
+endfor$0</string>
 	<key>name</key>
-	<string>function</string>
+	<string>for loop</string>
 	<key>scope</key>
 	<string>source.idl</string>
 	<key>tabTrigger</key>
-	<string>function</string>
+	<string>for</string>
 	<key>uuid</key>
-	<string>52244FC0-7FED-4394-8A77-AC6A69A1C9B1</string>
+	<string>1B7C4C7D-392F-4145-8C6B-259A7F95C27F</string>
 </dict>
 </plist>

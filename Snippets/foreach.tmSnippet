@@ -3,22 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>;+
-; $1
-;-
-pro $2
-  compile_opt strictarr
-
-  ${0|; TODO: implement|}
-end
-</string>
+	<string>foreach $1, $2, $3 do begin
+  ${4|; TODO: implement|}
+endforeach$0</string>
 	<key>name</key>
-	<string>procedure</string>
+	<string>foreach loop</string>
 	<key>scope</key>
 	<string>source.idl</string>
 	<key>tabTrigger</key>
-	<string>pro</string>
+	<string>foreach</string>
 	<key>uuid</key>
-	<string>4EBD3851-584B-46EB-AA3A-A3BDD3C28495</string>
+	<string>2DAEE22F-1CA8-47A4-B3EF-E96260A9EBA3</string>
 </dict>
 </plist>

@@ -5,20 +5,22 @@
 	<key>content</key>
 	<string>;+
 ; $1
+;
+; :Returns:
+;    $2
 ;-
-pro $2
+function $3
   compile_opt strictarr
 
   ${0|; TODO: implement|}
-end
-</string>
+end</string>
 	<key>name</key>
-	<string>procedure</string>
+	<string>function</string>
 	<key>scope</key>
 	<string>source.idl</string>
 	<key>tabTrigger</key>
-	<string>pro</string>
+	<string>function</string>
 	<key>uuid</key>
-	<string>4EBD3851-584B-46EB-AA3A-A3BDD3C28495</string>
+	<string>52244FC0-7FED-4394-8A77-AC6A69A1C9B1</string>
 </dict>
 </plist>
