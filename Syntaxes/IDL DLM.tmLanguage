@@ -22,6 +22,10 @@
 			<key>include</key>
 			<string>#routine_declaration</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#structure_declaration</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -64,7 +68,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(?i)\b(module|description|version|source|build_date)\b</string>
+			<string>(?i)\b(module|description|version|source|build_date|checksum)\b</string>
 			<key>name</key>
 			<string>keyword.control.idl.dlm</string>
 		</dict>
@@ -101,7 +105,27 @@
 			<key>comment</key>
 			<string>Routine declaration</string>
 			<key>match</key>
-			<string>(?i)^\s*(function|procedure)\s+([a-zA-Z0-9_$]+)\s+([0-9]+)\s+([0-9]+)\s+((keywords)?)</string>
+			<string>(?i)^\s*(function|procedure)\s+([a-zA-Z0-9_$]+)\s+([0-9]+)\s+([0-9]+)\s+(((keywords|obsolete)\s+)*)</string>
+		</dict>
+		<key>structure_declaration</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.idl.dlm</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.idl</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Structure declaration</string>
+			<key>match</key>
+			<string>(?i)^\s*(structure)\s+([a-zA-Z0-9_$]+)</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
