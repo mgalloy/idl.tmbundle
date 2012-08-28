@@ -170,6 +170,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Attribute</string>
+			<key>scope</key>
+			<string>entity.other.attribute</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff6800</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Library function</string>
 			<key>scope</key>
 			<string>support.function, support.function.idl</string>

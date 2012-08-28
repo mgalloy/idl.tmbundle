@@ -95,7 +95,7 @@
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.idl.dlm</string>
+					<string>entity.other.attribute</string>
 				</dict>
 			</dict>
 			<key>comment</key>
