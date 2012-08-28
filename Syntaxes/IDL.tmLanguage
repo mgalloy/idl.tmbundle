@@ -263,7 +263,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#all_matlab_keywords</string>
+					<string>#all_idl_keywords</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -390,7 +390,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(begin|break|case|catch|common|compile_opt|continue|do|else|end|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile|for|foreach|forward_function|goto|if|inherits|of|repeat|return|stop|switch|then|until|while)\b</string>
+			<string>(?i)(?&lt;!\.)\b(begin|break|case|catch|common|compile_opt|continue|do|else|end|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile|for|foreach|forward_function|goto|if|inherits|of|repeat|return|stop|switch|then|until|while)\b</string>
 			<key>name</key>
 			<string>keyword.control.idl</string>
 		</dict>
@@ -399,7 +399,7 @@
 			<key>comment</key>
 			<string>Operator keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)+\b(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\b</string>
+			<string>(?i)(?&lt;!\.)+\b(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\b</string>
 			<key>name</key>
 			<string>keyword.operator.idl</string>
 		</dict>
@@ -408,7 +408,7 @@
 			<key>comment</key>
 			<string>Storage types</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(function|pro)\b</string>
+			<string>(?i)(?&lt;!\.)\b(function|pro)\b</string>
 			<key>name</key>
 			<string>storage.type.idl</string>
 		</dict>

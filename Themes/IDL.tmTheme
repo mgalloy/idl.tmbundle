@@ -6,6 +6,8 @@
 	<string>Michael Galloy</string>
 	<key>name</key>
 	<string>IDL</string>
+	<key>scope</key>
+	<string>source.idl,source.idl.dlm</string>
 	<key>settings</key>
 	<array>
 		<dict>
