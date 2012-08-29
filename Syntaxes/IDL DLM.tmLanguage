@@ -31,46 +31,76 @@
 	<dict>
 		<key>comment</key>
 		<dict>
-			<key>begin</key>
-			<string>(^[ \t]+)?(?&lt;!\S)(?=#)(?!#\{)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.whitespace.comment.leading.idl.dlm</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(?!\G)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>begin</key>
-					<string>#</string>
-					<key>beginCaptures</key>
+					<key>captures</key>
 					<dict>
-						<key>0</key>
+						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.idl.dlm</string>
+							<string>meta.toc-list.banner.line.idl.dlm</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>^#=\s*(.*?)\s*$\n?</string>
+					<key>name</key>
+					<string>comment.line.banner.idl.dlm</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(^[ \t]+)?(?&lt;!\S)(?=#)(?!#\{)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.whitespace.comment.leading.idl.dlm</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\n</string>
-					<key>name</key>
-					<string>comment.line.idl.dlm</string>
+					<string>(?!\G)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>#</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.definition.comment.idl.dlm</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\n</string>
+							<key>name</key>
+							<string>comment.line.idl.dlm</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
 		<key>header_keyword</key>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>meta.toc-list.banner.line.idl.dlm</string>
+				</dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.idl.dlm</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>Control keywords</string>
+			<string>Header keywords</string>
 			<key>match</key>
-			<string>(?i)\b(module|description|version|source|build_date|checksum)\b</string>
-			<key>name</key>
-			<string>keyword.control.idl.dlm</string>
+			<string>(?i)\b(module|description|version|source|build_date|checksum)(.*)\b</string>
 		</dict>
 		<key>routine_declaration</key>
 		<dict>
@@ -84,7 +114,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>support.function.idl</string>
+					<string>entity.name.function.idl</string>
 				</dict>
 				<key>3</key>
 				<dict>
