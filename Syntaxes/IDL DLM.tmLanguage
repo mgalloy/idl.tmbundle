@@ -39,13 +39,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>meta.toc-list.banner.line.idl.dlm</string>
+							<string>meta.toc-list.banner.line.idl-dlm</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>^#=\s*(.*?)\s*$\n?</string>
 					<key>name</key>
-					<string>comment.line.banner.idl.dlm</string>
+					<string>comment.line.banner.idl-dlm</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -55,7 +55,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.whitespace.comment.leading.idl.dlm</string>
+							<string>punctuation.whitespace.comment.leading.idl-dlm</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -70,13 +70,13 @@
 								<key>0</key>
 								<dict>
 									<key>name</key>
-									<string>punctuation.definition.comment.idl.dlm</string>
+									<string>punctuation.definition.comment.idl-dlm</string>
 								</dict>
 							</dict>
 							<key>end</key>
 							<string>\n</string>
 							<key>name</key>
-							<string>comment.line.idl.dlm</string>
+							<string>comment.line.idl-dlm</string>
 						</dict>
 					</array>
 				</dict>
@@ -89,12 +89,12 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.toc-list.banner.line.idl.dlm</string>
+					<string>meta.toc-list.banner.line.idl-dlm</string>
 				</dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.idl.dlm</string>
+					<string>keyword.control.idl-dlm</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -109,7 +109,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.idl.dlm</string>
+					<string>keyword.control.idl-dlm</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -144,7 +144,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.idl.dlm</string>
+					<string>keyword.control.idl-dlm</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -159,7 +159,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.idl.dlm</string>
+	<string>source.idl-dlm</string>
 	<key>uuid</key>
 	<string>7FC8175C-9E9A-49F0-B81E-A49C57775A7F</string>
 </dict>
