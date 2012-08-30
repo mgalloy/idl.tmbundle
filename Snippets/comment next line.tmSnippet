@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>compile_opt ${1|strictarr|}
-
-$0</string>
+	<string>
+; ${0}</string>
+	<key>keyEquivalent</key>
+	<string>~</string>
 	<key>name</key>
-	<string>compile_opt</string>
+	<string>comment next line</string>
 	<key>scope</key>
 	<string>source.idl</string>
-	<key>tabTrigger</key>
-	<string>co</string>
 	<key>uuid</key>
-	<string>19403786-EC03-4B3E-92B5-03C88703145C</string>
+	<string>BD617485-D690-4C65-BBB9-A9C216171B6A</string>
 </dict>
 </plist>
