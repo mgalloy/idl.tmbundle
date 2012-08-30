@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>Michael Galloy</string>
 	<key>description</key>
-	<string>Support for the Interactive Data Language (IDL)/GDL.
+	<string>Support for the Interactive Data Language (IDL) and the GNU Data Language (GDL).
 </string>
 	<key>name</key>
 	<string>IDL</string>
