@@ -121,7 +121,31 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#float</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#integer</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#binary_integer</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#octal_integer</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#hex_integer</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#string</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#word_operators</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -134,10 +158,6 @@
 		<dict>
 			<key>include</key>
 			<string>#all_idl_comments</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#number</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -279,13 +299,42 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#number</string>
+					<string>#float</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#binary_integer</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#octal_integer</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#hex_integer</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#word_operators</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#operators</string>
 				</dict>
 			</array>
+		</dict>
+		<key>binary_integer</key>
+		<dict>
+			<key>comment</key>
+			<string>Valid numbers: '1001'b</string>
+			<key>match</key>
+			<string>(?i)'[01]+'b\b</string>
+			<key>name</key>
+			<string>constant.numeric.idl</string>
 		</dict>
 		<key>brackets</key>
 		<dict>
@@ -385,6 +434,24 @@
 				</dict>
 			</array>
 		</dict>
+		<key>float</key>
+		<dict>
+			<key>comment</key>
+			<string>Valid numbers: .1, 1.1, .1e1, 1.1e1, 1e1, .1d1, 1.1d1, 1d1</string>
+			<key>match</key>
+			<string>(?i)\b\d*\.?\d+([ed][+-]?)?\d*\b</string>
+			<key>name</key>
+			<string>constant.numeric.idl</string>
+		</dict>
+		<key>hex_integer</key>
+		<dict>
+			<key>comment</key>
+			<string>Valid numbers: 'AF'x</string>
+			<key>match</key>
+			<string>(?i)'[0-9a-f]+'x\b</string>
+			<key>name</key>
+			<string>constant.numeric.idl</string>
+		</dict>
 		<key>idl_keyword_control</key>
 		<dict>
 			<key>comment</key>
@@ -399,7 +466,7 @@
 			<key>comment</key>
 			<string>Operator keywords</string>
 			<key>match</key>
-			<string>(?i)(?&lt;!\.)+\b(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\b</string>
+			<string>(?i)(?&lt;!\.)+\s(and|eq|ge|gt|le|lt|mod|or|ne|not|xor)\s</string>
 			<key>name</key>
 			<string>keyword.operator.idl</string>
 		</dict>
@@ -408,7 +475,7 @@
 			<key>comment</key>
 			<string>Storage types</string>
 			<key>match</key>
-			<string>(?i)(?&lt;!\.)\b(function|pro)\b</string>
+			<string>(?i)(?&lt;!\.)\b(function|pro)\s</string>
 			<key>name</key>
 			<string>storage.type.idl</string>
 		</dict>
@@ -426,9 +493,18 @@
 			<key>comment</key>
 			<string>IDL system variables</string>
 			<key>match</key>
-			<string>\![A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z_][A-Za-z0-9_]*)*</string>
+			<string>\b\![A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z_][A-Za-z0-9_]*)*\b</string>
 			<key>name</key>
 			<string>constant.language.idl</string>
+		</dict>
+		<key>integer</key>
+		<dict>
+			<key>comment</key>
+			<string>Valid numbers: 1, 0B, 0S, 0L, 0UL, 0LL, 0ULL</string>
+			<key>match</key>
+			<string>(?i)\b\d+(b|s|l|ul|ll|ull)?\b</string>
+			<key>name</key>
+			<string>constant.numeric.idl</string>
 		</dict>
 		<key>not_equal_invalid</key>
 		<dict>
@@ -439,12 +515,12 @@
 			<key>name</key>
 			<string>invalid.illegal.invalid-inequality.matlab</string>
 		</dict>
-		<key>number</key>
+		<key>octal_integer</key>
 		<dict>
 			<key>comment</key>
-			<string>Valid numbers: 1, .1, 1.1, .1e1, 1.1e1, 1e1, .1d1, 1.1d1, 1d1, 0B, 0S, 0L, 0UL, 0LL, 0ULL</string>
+			<string>Valid numbers: '36'o</string>
 			<key>match</key>
-			<string>(?&lt;=^|[\s\-\+\*\/\\=:\[\(,])\d*\.?\d+([edED][+-]?\d+)?\b|'[0-9a-fA-F]+'x\b|\d+(?i)(b|s|l|ul|ll|ull)?\b</string>
+			<string>(?i)'[0-7]+'o\b</string>
 			<key>name</key>
 			<string>constant.numeric.idl</string>
 		</dict>
@@ -453,7 +529,7 @@
 			<key>comment</key>
 			<string>Operator symbols</string>
 			<key>match</key>
-			<string>\s*(?i)(eq|ne|lt|le|gt|ge|&gt;|&lt;|and|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*</string>
+			<string>(?i)(&gt;|&lt;|&amp;&amp;|\?|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)</string>
 			<key>name</key>
 			<string>keyword.operator.symbols.idl</string>
 		</dict>
@@ -605,6 +681,15 @@
 			<string>\b(\$\w|\d+[_a-df-zA-DF-Z])\w*\b</string>
 			<key>name</key>
 			<string>invalid.illegal.invalid-variable-name.idl</string>
+		</dict>
+		<key>word_operators</key>
+		<dict>
+			<key>comment</key>
+			<string>Operator words</string>
+			<key>match</key>
+			<string>(?i)\s(eq|ne|lt|le|gt|ge|and)\s</string>
+			<key>name</key>
+			<string>keyword.operator.symbols.idl</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
