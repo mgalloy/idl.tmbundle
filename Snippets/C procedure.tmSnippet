@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>static void $1(int argc, IDL_VPTR *argv, char *argk) {
+  $0
+}
+</string>
+	<key>name</key>
+	<string>C procedure</string>
+	<key>scope</key>
+	<string>source.c</string>
+	<key>tabTrigger</key>
+	<string>pro</string>
+	<key>uuid</key>
+	<string>EC33DC04-8269-4FE3-81B5-35654C274F8D</string>
+</dict>
+</plist>

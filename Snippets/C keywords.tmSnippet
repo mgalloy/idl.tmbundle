@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>typedef struct {
+  IDL_KW_RESULT_FIRST_FIELD;
+  IDL_VPTR ${1};
+  int ${1}_present;
+} KW_RESULT;
+
+static IDL_KW_PAR kw_pars[] = {
+  { "${1/./\u$0/g}", IDL_TYP_LONG, 1, IDL_KW_OUT,
+    IDL_KW_OFFSETOF(${1}_present), IDL_KW_OFFSETOF(${1}) },
+  { NULL }
+};
+
+nargs = IDL_KWProcessByOffset(argc, argv, argk, kw_pars, (IDL_VPTR *) NULL, 1, &amp;kw);
+
+IDL_KW_FREE;</string>
+	<key>name</key>
+	<string>C keywords</string>
+	<key>scope</key>
+	<string>source.c</string>
+	<key>tabTrigger</key>
+	<string>kw</string>
+	<key>uuid</key>
+	<string>876E04C9-2A9D-48E4-A240-C0DC13A64D3A</string>
+</dict>
+</plist>
