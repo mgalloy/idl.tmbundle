@@ -5,7 +5,8 @@
 	<key>content</key>
 	<string>for $1 = $2, $3 do begin
   ${4|; TODO: implement|}
-endfor$0</string>
+endfor
+$0</string>
 	<key>name</key>
 	<string>for loop</string>
 	<key>scope</key>

@@ -6,7 +6,8 @@
 	<string>case $1 of
   $2: ${3|; TODO implement|}
   else:
-endcase$0
+endcase
+$0
 </string>
 	<key>name</key>
 	<string>case statement</string>

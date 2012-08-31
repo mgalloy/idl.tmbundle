@@ -5,7 +5,8 @@
 	<key>content</key>
 	<string>while ($1) do begin
   ${2|; TODO: implement|}
-endwhile$0</string>
+endwhile
+$0</string>
 	<key>name</key>
 	<string>while loop</string>
 	<key>scope</key>

@@ -5,7 +5,8 @@
 	<key>content</key>
 	<string>foreach $1, $2, $3 do begin
   ${4|; TODO: implement|}
-endforeach$0</string>
+endforeach
+$0</string>
 	<key>name</key>
 	<string>foreach loop</string>
 	<key>scope</key>

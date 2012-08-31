@@ -6,6 +6,8 @@
 	<string>; docformat = 'rst'
 
 ;+
+; Definition of ${1} class.
+;
 ; :Properties:
 ;    
 ; :Author:
@@ -16,7 +18,7 @@
 ;+
 ; Set properties.
 ;-
-pro $1::setProperty
+pro ${1/./\l$0/g}::setProperty
   compile_opt strictarr
 
 end
@@ -25,19 +27,19 @@ end
 ;+
 ; Get properties.
 ;-
-pro $1::getProperty
+pro ${1/./\l$0/g}::getProperty
   compile_opt strictarr
 
 end
 
 
 ;+
-; Instantiate $1 object.
+; Instantiate ${1/./\l$0/g} object.
 ;
 ; :Returns:
 ;    1 for success, 0 for failure
 ;-
-function $1::init
+function ${1/./\l$0/g}::init
   compile_opt strictarr
 
   return, 1
@@ -50,10 +52,10 @@ end
 ; :Fields:
 ;   $2
 ;-
-pro $1__define
+pro ${1/./\l$0/g}__define
   compile_opt strictarr
 
-  define = { $1, $2$0 }
+  define = { ${1}, $2$0 }
 end</string>
 	<key>name</key>
 	<string>class</string>

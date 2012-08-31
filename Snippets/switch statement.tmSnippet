@@ -6,7 +6,8 @@
 	<string>switch ($1) of
   $2: ${3|; TODO: implement|}
   else: 
-endswitch$0
+endswitch
+$0
 </string>
 	<key>name</key>
 	<string>switch statement</string>

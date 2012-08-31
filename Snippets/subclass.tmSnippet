@@ -6,6 +6,8 @@
 	<string>; docformat = 'rst'
 
 ;+
+; Definition of ${1} class.
+;
 ; :Properties:
 ;    _extra
 ;       properties from $2
@@ -18,7 +20,7 @@
 ;+
 ; Set properties.
 ;-
-pro $1::setProperty, _extra=e
+pro ${1/./\l$0/g}::setProperty, _extra=e
   compile_opt strictarr
 
   if (n_elements(e) gt 0L) then self-&gt;$2::setProperty, _extra=e
@@ -28,7 +30,7 @@ end
 ;+
 ; Get properties.
 ;-
-pro $1::getProperty, _ref_extra=e
+pro ${1/./\l$0/g}::getProperty, _ref_extra=e
   compile_opt strictarr
 
   if (n_elements(e) gt 0L) then self-&gt;$2::getProperty, _extra=e
@@ -36,12 +38,12 @@ end
 
 
 ;+
-; Instantiate $1 object.
+; Instantiate ${1/./\l$0/g} object.
 ;
 ; :Returns:
 ;    1 for success, 0 for failure
 ;-
-function $1::init, _extra=e
+function ${1/./\l$0/g}::init, _extra=e
   compile_opt strictarr
 
   if (~self-&gt;$2::init(_extra=e)) then return, 0
@@ -53,10 +55,10 @@ end
 ;+
 ; Define instance variables.
 ;-
-pro $1__define
+pro ${1/./\l$0/g}__define
   compile_opt strictarr
 
-  define = { $1, inherits $2$0 }
+  define = { ${1}, inherits $2$0 }
 end</string>
 	<key>name</key>
 	<string>subclass</string>
