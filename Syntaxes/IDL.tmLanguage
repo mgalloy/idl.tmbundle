@@ -345,11 +345,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.brackets.matlab</string>
+					<string>meta.brackets.idl</string>
 				</dict>
 			</dict>
 			<key>contentName</key>
-			<string>meta.brackets.matlab</string>
+			<string>meta.brackets.idl</string>
 			<key>end</key>
 			<string>\]</string>
 			<key>endCaptures</key>
@@ -357,7 +357,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.brackets.matlab</string>
+					<string>meta.brackets.idl</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -371,47 +371,11 @@
 		<key>constants_override</key>
 		<dict>
 			<key>comment</key>
-			<string>The user is trying to override MATLAB constants and functions.</string>
+			<string>The user is trying to override IDL constants and functions.</string>
 			<key>match</key>
-			<string>(^|\;)\s*(i|j|inf|Inf|nan|NaN|eps|end)\s*=[^=]</string>
+			<string>(^|\;)\s*(inf|Inf|nan|NaN|eps|end)\s*=[^=]</string>
 			<key>name</key>
-			<string>meta.inappropriate.matlab</string>
-		</dict>
-		<key>curlybrackets</key>
-		<dict>
-			<key>begin</key>
-			<string>\{</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>meta.brackets.curly.matlab</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>meta.brackets.curly.matlab</string>
-			<key>end</key>
-			<string>\}</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>meta.brackets.curly.matlab</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#allofem</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#end_in_parens</string>
-				</dict>
-			</array>
+			<string>meta.inappropriate.idl</string>
 		</dict>
 		<key>end_in_parens</key>
 		<dict>
@@ -506,15 +470,6 @@
 			<key>name</key>
 			<string>constant.numeric.idl</string>
 		</dict>
-		<key>not_equal_invalid</key>
-		<dict>
-			<key>comment</key>
-			<string>Not equal is written ~= not !=.</string>
-			<key>match</key>
-			<string>\s*!=\s*</string>
-			<key>name</key>
-			<string>invalid.illegal.invalid-inequality.matlab</string>
-		</dict>
 		<key>octal_integer</key>
 		<dict>
 			<key>comment</key>
@@ -542,11 +497,11 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.parens.matlab</string>
+					<string>meta.parens.idl</string>
 				</dict>
 			</dict>
 			<key>contentName</key>
-			<string>meta.parens.matlab</string>
+			<string>meta.parens.idl</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>endCaptures</key>
@@ -554,7 +509,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.parens.matlab</string>
+					<string>meta.parens.idl</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -601,7 +556,7 @@
 			<key>match</key>
 			<string>((\%([\+\-0]?\d{0,3}(\.\d{1,3})?)(c|d|e|E|f|g|G|s|((b|t)?(o|u|x|X))))|\%\%|\\(b|f|n|r|t|\\))</string>
 			<key>name</key>
-			<string>constant.character.escape.matlab</string>
+			<string>constant.character.escape.idl</string>
 		</dict>
 		<key>string</key>
 		<dict>
