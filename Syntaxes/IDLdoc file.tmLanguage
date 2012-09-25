@@ -18,7 +18,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.idl-idldoc</string>
+	<string>text.idl-idldoc</string>
 	<key>uuid</key>
 	<string>E18B4441-7323-45BF-B481-DA48DC11C65A</string>
 </dict>
