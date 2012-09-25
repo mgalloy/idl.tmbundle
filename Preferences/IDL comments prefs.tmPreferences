@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>IDL comments prefs</string>
 	<key>scope</key>
-	<string>comment.line.semicolon.idl</string>
+	<string>comment.line.semicolon.idl, comment.idl.idldoc</string>
 	<key>settings</key>
 	<dict>
 		<key>smartTypingPairs</key>
