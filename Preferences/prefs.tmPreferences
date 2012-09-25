@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>prefs</string>
+	<string>IDL source prefs</string>
 	<key>scope</key>
 	<string>source.idl</string>
 	<key>settings</key>
@@ -1546,6 +1546,21 @@
 				<key>value</key>
 				<string>; </string>
 			</dict>
+		</array>
+		<key>smartTypingPairs</key>
+		<array>
+			<array>
+				<string>"</string>
+				<string>"</string>
+			</array>
+			<array>
+				<string>'</string>
+				<string>'</string>
+			</array>
+			<array>
+				<string>&lt;</string>
+				<string>&gt;</string>
+			</array>
 		</array>
 	</dict>
 	<key>uuid</key>
