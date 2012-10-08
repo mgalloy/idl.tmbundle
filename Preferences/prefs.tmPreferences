@@ -29,8 +29,10 @@
 			<string>atan</string>
 			<string>axis</string>
 			<string>a_correlate</string>
+			<string>bandpass_filter</string>
+			<string>bandreject_filter</string>
+			<string>barplot</string>
 			<string>bar_plot</string>
-			<string>begin</string>
 			<string>beseli</string>
 			<string>beselj</string>
 			<string>beselk</string>
@@ -41,12 +43,14 @@
 			<string>bindgen</string>
 			<string>binomial</string>
 			<string>bin_date</string>
+			<string>bit_ffs</string>
+			<string>bit_population</string>
 			<string>blas_axpy</string>
 			<string>blk_con</string>
 			<string>box_cursor</string>
-			<string>break</string>
 			<string>breakpoint</string>
 			<string>broyden</string>
+			<string>butterworth</string>
 			<string>bytarr</string>
 			<string>byte</string>
 			<string>byteorder</string>
@@ -57,9 +61,53 @@
 			<string>call_function</string>
 			<string>call_method</string>
 			<string>call_procedure</string>
-			<string>case</string>
+			<string>canny</string>
 			<string>catch</string>
 			<string>cd</string>
+			<string>cdf_attcreate</string>
+			<string>cdf_attdelete</string>
+			<string>cdf_attexists</string>
+			<string>cdf_attget</string>
+			<string>cdf_attget_entry</string>
+			<string>cdf_attinq</string>
+			<string>cdf_attnum</string>
+			<string>cdf_attput</string>
+			<string>cdf_attrename</string>
+			<string>cdf_close</string>
+			<string>cdf_compression</string>
+			<string>cdf_control</string>
+			<string>cdf_create</string>
+			<string>cdf_delete</string>
+			<string>cdf_doc</string>
+			<string>cdf_encode_epoch</string>
+			<string>cdf_encode_epoch16</string>
+			<string>cdf_encode_tt2000</string>
+			<string>cdf_epoch</string>
+			<string>cdf_epoch16</string>
+			<string>cdf_epoch_compare</string>
+			<string>cdf_epoch_diff</string>
+			<string>cdf_epoch_tojuldays</string>
+			<string>cdf_error</string>
+			<string>cdf_exists</string>
+			<string>cdf_inquire</string>
+			<string>cdf_leapseconds_info</string>
+			<string>cdf_lib_info</string>
+			<string>cdf_open</string>
+			<string>cdf_parse_epoch</string>
+			<string>cdf_parse_epoch16</string>
+			<string>cdf_parse_tt2000</string>
+			<string>cdf_set_cdf27_backward_c</string>
+			<string>cdf_set_md5checksum</string>
+			<string>cdf_set_validate</string>
+			<string>cdf_tt2000</string>
+			<string>cdf_varcreate</string>
+			<string>cdf_vardelete</string>
+			<string>cdf_varget</string>
+			<string>cdf_varget1</string>
+			<string>cdf_varinq</string>
+			<string>cdf_varnum</string>
+			<string>cdf_varput</string>
+			<string>cdf_varrename</string>
 			<string>ceil</string>
 			<string>chebyshev</string>
 			<string>check_math</string>
@@ -73,12 +121,19 @@
 			<string>cluster</string>
 			<string>cluster_tree</string>
 			<string>clust_wts</string>
+			<string>cmyk_convert</string>
+			<string>colorbar</string>
+			<string>colorize_sample</string>
 			<string>colormap_applicable</string>
+			<string>colormap_gradient</string>
+			<string>colormap_rotation</string>
+			<string>colortable</string>
 			<string>color_convert</string>
+			<string>color_exchange</string>
 			<string>color_quan</string>
+			<string>color_range_map</string>
 			<string>comfit</string>
-			<string>common</string>
-			<string>compile_opt</string>
+			<string>command_line_args</string>
 			<string>complex</string>
 			<string>complexarr</string>
 			<string>complexround</string>
@@ -87,10 +142,10 @@
 			<string>congrid</string>
 			<string>conj</string>
 			<string>constrained_min</string>
-			<string>continue</string>
 			<string>contour</string>
 			<string>convert_coord</string>
 			<string>convol</string>
+			<string>convol_fft</string>
 			<string>coord2to3</string>
 			<string>copy_lun</string>
 			<string>correlate</string>
@@ -135,6 +190,7 @@
 			<string>cw_zoom</string>
 			<string>c_correlate</string>
 			<string>dblarr</string>
+			<string>db_exists</string>
 			<string>dcindgen</string>
 			<string>dcomplex</string>
 			<string>dcomplexarr</string>
@@ -152,6 +208,7 @@
 			<string>device</string>
 			<string>dfpmin</string>
 			<string>diag_matrix</string>
+			<string>dialog_dbconnect</string>
 			<string>dialog_message</string>
 			<string>dialog_pickfile</string>
 			<string>dialog_printersetup</string>
@@ -169,19 +226,152 @@
 			<string>doc_library</string>
 			<string>double</string>
 			<string>draw_roi</string>
+			<string>edge_dog</string>
 			<string>efont</string>
 			<string>eigenql</string>
 			<string>eigenvec</string>
+			<string>ellipse</string>
 			<string>elmhes</string>
+			<string>emboss</string>
 			<string>empty</string>
 			<string>enable_sysrtn</string>
 			<string>eof</string>
+			<string>eos_eh_convang</string>
+			<string>eos_eh_getversion</string>
+			<string>eos_eh_idinfo</string>
+			<string>eos_exists</string>
+			<string>eos_gd_attach</string>
+			<string>eos_gd_attrinfo</string>
+			<string>eos_gd_blksomoffset</string>
+			<string>eos_gd_close</string>
+			<string>eos_gd_compinfo</string>
+			<string>eos_gd_create</string>
+			<string>eos_gd_defboxregion</string>
+			<string>eos_gd_defcomp</string>
+			<string>eos_gd_defdim</string>
+			<string>eos_gd_deffield</string>
+			<string>eos_gd_deforigin</string>
+			<string>eos_gd_defpixreg</string>
+			<string>eos_gd_defproj</string>
+			<string>eos_gd_deftile</string>
+			<string>eos_gd_defvrtregion</string>
+			<string>eos_gd_detach</string>
+			<string>eos_gd_diminfo</string>
+			<string>eos_gd_dupregion</string>
+			<string>eos_gd_extractregion</string>
+			<string>eos_gd_fieldinfo</string>
+			<string>eos_gd_getfillvalue</string>
+			<string>eos_gd_getpixels</string>
+			<string>eos_gd_getpixvalues</string>
+			<string>eos_gd_gridinfo</string>
+			<string>eos_gd_inqattrs</string>
+			<string>eos_gd_inqdims</string>
+			<string>eos_gd_inqfields</string>
+			<string>eos_gd_inqgrid</string>
+			<string>eos_gd_interpolate</string>
+			<string>eos_gd_nentries</string>
+			<string>eos_gd_open</string>
+			<string>eos_gd_origininfo</string>
+			<string>eos_gd_pixreginfo</string>
+			<string>eos_gd_projinfo</string>
+			<string>eos_gd_query</string>
+			<string>eos_gd_readattr</string>
+			<string>eos_gd_readfield</string>
+			<string>eos_gd_readtile</string>
+			<string>eos_gd_regioninfo</string>
+			<string>eos_gd_setfillvalue</string>
+			<string>eos_gd_settilecache</string>
+			<string>eos_gd_tileinfo</string>
+			<string>eos_gd_writeattr</string>
+			<string>eos_gd_writefield</string>
+			<string>eos_gd_writefieldmeta</string>
+			<string>eos_gd_writetile</string>
+			<string>eos_pt_attach</string>
+			<string>eos_pt_attrinfo</string>
+			<string>eos_pt_bcklinkinfo</string>
+			<string>eos_pt_close</string>
+			<string>eos_pt_create</string>
+			<string>eos_pt_defboxregion</string>
+			<string>eos_pt_deflevel</string>
+			<string>eos_pt_deflinkage</string>
+			<string>eos_pt_deftimeperiod</string>
+			<string>eos_pt_defvrtregion</string>
+			<string>eos_pt_detach</string>
+			<string>eos_pt_extractperiod</string>
+			<string>eos_pt_extractregion</string>
+			<string>eos_pt_fwdlinkinfo</string>
+			<string>eos_pt_getlevelname</string>
+			<string>eos_pt_getrecnums</string>
+			<string>eos_pt_inqattrs</string>
+			<string>eos_pt_inqpoint</string>
+			<string>eos_pt_levelindx</string>
+			<string>eos_pt_levelinfo</string>
+			<string>eos_pt_nfields</string>
+			<string>eos_pt_nlevels</string>
+			<string>eos_pt_nrecs</string>
+			<string>eos_pt_open</string>
+			<string>eos_pt_periodinfo</string>
+			<string>eos_pt_periodrecs</string>
+			<string>eos_pt_query</string>
+			<string>eos_pt_readattr</string>
+			<string>eos_pt_readlevel</string>
+			<string>eos_pt_regioninfo</string>
+			<string>eos_pt_regionrecs</string>
+			<string>eos_pt_sizeof</string>
+			<string>eos_pt_updatelevel</string>
+			<string>eos_pt_writeattr</string>
+			<string>eos_pt_writelevel</string>
+			<string>eos_query</string>
+			<string>eos_sw_attach</string>
+			<string>eos_sw_attrinfo</string>
+			<string>eos_sw_close</string>
+			<string>eos_sw_compinfo</string>
+			<string>eos_sw_create</string>
+			<string>eos_sw_defboxregion</string>
+			<string>eos_sw_defcomp</string>
+			<string>eos_sw_defdatafield</string>
+			<string>eos_sw_defdim</string>
+			<string>eos_sw_defdimmap</string>
+			<string>eos_sw_defgeofield</string>
+			<string>eos_sw_defidxmap</string>
+			<string>eos_sw_deftimeperiod</string>
+			<string>eos_sw_defvrtregion</string>
+			<string>eos_sw_detach</string>
+			<string>eos_sw_diminfo</string>
+			<string>eos_sw_dupregion</string>
+			<string>eos_sw_extractperiod</string>
+			<string>eos_sw_extractregion</string>
+			<string>eos_sw_fieldinfo</string>
+			<string>eos_sw_getfillvalue</string>
+			<string>eos_sw_idxmapinfo</string>
+			<string>eos_sw_inqattrs</string>
+			<string>eos_sw_inqdatafields</string>
+			<string>eos_sw_inqdims</string>
+			<string>eos_sw_inqgeofields</string>
+			<string>eos_sw_inqidxmaps</string>
+			<string>eos_sw_inqmaps</string>
+			<string>eos_sw_inqswath</string>
+			<string>eos_sw_mapinfo</string>
+			<string>eos_sw_nentries</string>
+			<string>eos_sw_open</string>
+			<string>eos_sw_periodinfo</string>
+			<string>eos_sw_query</string>
+			<string>eos_sw_readattr</string>
+			<string>eos_sw_readfield</string>
+			<string>eos_sw_regioninfo</string>
+			<string>eos_sw_setfillvalue</string>
+			<string>eos_sw_writeattr</string>
+			<string>eos_sw_writedatameta</string>
+			<string>eos_sw_writefield</string>
+			<string>eos_sw_writegeometa</string>
 			<string>erase</string>
 			<string>erf</string>
 			<string>erfc</string>
 			<string>erfcx</string>
 			<string>erode</string>
+			<string>errorplot</string>
 			<string>errplot</string>
+			<string>estimator_filter</string>
 			<string>execute</string>
 			<string>exit</string>
 			<string>exp</string>
@@ -204,6 +394,7 @@
 			<string>file_link</string>
 			<string>file_mkdir</string>
 			<string>file_move</string>
+			<string>file_poll_input</string>
 			<string>file_readlink</string>
 			<string>file_same</string>
 			<string>file_search</string>
@@ -218,14 +409,11 @@
 			<string>flow3</string>
 			<string>fltarr</string>
 			<string>flush</string>
-			<string>for</string>
 			<string>format_axis_values</string>
-			<string>forward_function</string>
 			<string>free_lun</string>
 			<string>fstat</string>
 			<string>fulstr</string>
 			<string>funct</string>
-			<string>function</string>
 			<string>fv_test</string>
 			<string>fx_root</string>
 			<string>fz_roots</string>
@@ -235,26 +423,348 @@
 			<string>gamma_ct</string>
 			<string>gauss2dfit</string>
 			<string>gaussfit</string>
+			<string>gaussian_function</string>
 			<string>gaussint</string>
 			<string>gauss_cvf</string>
 			<string>gauss_pdf</string>
+			<string>gauss_smooth</string>
 			<string>getenv</string>
+			<string>getwindows</string>
 			<string>get_drive_list</string>
+			<string>get_dxf_objects</string>
 			<string>get_kbrd</string>
+			<string>get_login_info</string>
 			<string>get_lun</string>
 			<string>get_screen_size</string>
-			<string>goto</string>
+			<string>greg2jul</string>
+			<string>grib_clone</string>
+			<string>grib_close</string>
+			<string>grib_count</string>
+			<string>grib_find_nearest</string>
+			<string>grib_get</string>
+			<string>grib_get_api_version</string>
+			<string>grib_get_array</string>
+			<string>grib_get_double_elements</string>
+			<string>grib_get_message_size</string>
+			<string>grib_get_native_type</string>
+			<string>grib_get_size</string>
+			<string>grib_get_values</string>
+			<string>grib_gribex_mode</string>
+			<string>grib_gts_header</string>
+			<string>grib_index_get</string>
+			<string>grib_index_get_size</string>
+			<string>grib_index_new_from_file</string>
+			<string>grib_index_read</string>
+			<string>grib_index_release</string>
+			<string>grib_index_select</string>
+			<string>grib_index_write</string>
+			<string>grib_is_missing</string>
+			<string>grib_iterator_delete</string>
+			<string>grib_iterator_new</string>
+			<string>grib_iterator_next</string>
+			<string>grib_keys_iterator_delete</string>
+			<string>grib_keys_iterator_get_name</string>
+			<string>grib_keys_iterator_new</string>
+			<string>grib_keys_iterator_next</string>
+			<string>grib_keys_iterator_rewind</string>
+			<string>grib_multi_append</string>
+			<string>grib_multi_new</string>
+			<string>grib_multi_release</string>
+			<string>grib_multi_support</string>
+			<string>grib_multi_write</string>
+			<string>grib_new_from_file</string>
+			<string>grib_new_from_index</string>
+			<string>grib_new_from_samples</string>
+			<string>grib_open</string>
+			<string>grib_release</string>
+			<string>grib_set</string>
+			<string>grib_set_array</string>
+			<string>grib_set_missing</string>
+			<string>grib_set_values</string>
+			<string>grib_write_message</string>
 			<string>grid3</string>
 			<string>griddata</string>
 			<string>grid_input</string>
 			<string>grid_tps</string>
 			<string>gs_iter</string>
+			<string>h5a_close</string>
+			<string>h5a_create</string>
+			<string>h5a_delete</string>
+			<string>h5a_get_name</string>
+			<string>h5a_get_num_attrs</string>
+			<string>h5a_get_space</string>
+			<string>h5a_get_type</string>
+			<string>h5a_open_idx</string>
+			<string>h5a_open_name</string>
+			<string>h5a_read</string>
+			<string>h5a_write</string>
+			<string>h5d_close</string>
+			<string>h5d_create</string>
+			<string>h5d_extend</string>
+			<string>h5d_get_space</string>
+			<string>h5d_get_storage_size</string>
+			<string>h5d_get_type</string>
+			<string>h5d_open</string>
+			<string>h5d_read</string>
+			<string>h5d_write</string>
+			<string>h5f_close</string>
+			<string>h5f_create</string>
+			<string>h5f_is_hdf5</string>
+			<string>h5f_open</string>
+			<string>h5g_close</string>
+			<string>h5g_create</string>
+			<string>h5g_get_comment</string>
+			<string>h5g_get_linkval</string>
+			<string>h5g_get_member_name</string>
+			<string>h5g_get_nmembers</string>
+			<string>h5g_get_num_objs</string>
+			<string>h5g_get_objinfo</string>
+			<string>h5g_get_obj_name_by_idx</string>
+			<string>h5g_link</string>
+			<string>h5g_move</string>
+			<string>h5g_open</string>
+			<string>h5g_set_comment</string>
+			<string>h5g_unlink</string>
+			<string>h5i_get_file_id</string>
+			<string>h5i_get_type</string>
+			<string>h5r_create</string>
+			<string>h5r_dereference</string>
+			<string>h5r_get_object_type</string>
+			<string>h5r_get_region</string>
+			<string>h5s_close</string>
+			<string>h5s_copy</string>
+			<string>h5s_create_scalar</string>
+			<string>h5s_create_simple</string>
+			<string>h5s_get_select_bounds</string>
+			<string>h5s_get_select_elem_npoi</string>
+			<string>h5s_get_select_elem_poin</string>
+			<string>h5s_get_select_hyper_blo</string>
+			<string>h5s_get_select_hyper_nbl</string>
+			<string>h5s_get_select_npoints</string>
+			<string>h5s_get_simple_extent_di</string>
+			<string>h5s_get_simple_extent_nd</string>
+			<string>h5s_get_simple_extent_np</string>
+			<string>h5s_get_simple_extent_ty</string>
+			<string>h5s_is_simple</string>
+			<string>h5s_offset_simple</string>
+			<string>h5s_select_all</string>
+			<string>h5s_select_elements</string>
+			<string>h5s_select_hyperslab</string>
+			<string>h5s_select_none</string>
+			<string>h5s_select_valid</string>
+			<string>h5s_set_extent_none</string>
+			<string>h5s_set_extent_simple</string>
+			<string>h5t_array_create</string>
+			<string>h5t_close</string>
+			<string>h5t_commit</string>
+			<string>h5t_committed</string>
+			<string>h5t_compound_create</string>
+			<string>h5t_copy</string>
+			<string>h5t_enum_create</string>
+			<string>h5t_enum_get_data</string>
+			<string>h5t_enum_insert</string>
+			<string>h5t_enum_nameof</string>
+			<string>h5t_enum_set_data</string>
+			<string>h5t_enum_valueof</string>
+			<string>h5t_enum_values_to_names</string>
+			<string>h5t_equal</string>
+			<string>h5t_get_array_dims</string>
+			<string>h5t_get_array_ndims</string>
+			<string>h5t_get_class</string>
+			<string>h5t_get_cset</string>
+			<string>h5t_get_ebias</string>
+			<string>h5t_get_fields</string>
+			<string>h5t_get_inpad</string>
+			<string>h5t_get_member_class</string>
+			<string>h5t_get_member_index</string>
+			<string>h5t_get_member_name</string>
+			<string>h5t_get_member_offset</string>
+			<string>h5t_get_member_type</string>
+			<string>h5t_get_member_value</string>
+			<string>h5t_get_nmembers</string>
+			<string>h5t_get_norm</string>
+			<string>h5t_get_offset</string>
+			<string>h5t_get_order</string>
+			<string>h5t_get_pad</string>
+			<string>h5t_get_precision</string>
+			<string>h5t_get_sign</string>
+			<string>h5t_get_size</string>
+			<string>h5t_get_strpad</string>
+			<string>h5t_get_super</string>
+			<string>h5t_get_tag</string>
+			<string>h5t_idltype</string>
+			<string>h5t_idl_create</string>
+			<string>h5t_insert</string>
+			<string>h5t_memtype</string>
+			<string>h5t_open</string>
+			<string>h5t_reference_create</string>
+			<string>h5t_set_tag</string>
+			<string>h5t_str_to_vlen</string>
+			<string>h5t_vlen_create</string>
+			<string>h5t_vlen_to_str</string>
 			<string>h5_browser</string>
+			<string>h5_close</string>
+			<string>h5_create</string>
+			<string>h5_get_libversion</string>
+			<string>h5_open</string>
+			<string>h5_parse</string>
 			<string>hanning</string>
+			<string>hash</string>
+			<string>hdf_an_annlen</string>
+			<string>hdf_an_annlist</string>
+			<string>hdf_an_atype2tag</string>
+			<string>hdf_an_create</string>
+			<string>hdf_an_createf</string>
+			<string>hdf_an_end</string>
+			<string>hdf_an_endaccess</string>
+			<string>hdf_an_fileinfo</string>
+			<string>hdf_an_get_tagref</string>
+			<string>hdf_an_id2tagref</string>
+			<string>hdf_an_numann</string>
+			<string>hdf_an_readann</string>
+			<string>hdf_an_select</string>
+			<string>hdf_an_start</string>
+			<string>hdf_an_tag2atype</string>
+			<string>hdf_an_tagref2id</string>
+			<string>hdf_an_writeann</string>
 			<string>hdf_browser</string>
+			<string>hdf_close</string>
+			<string>hdf_deldd</string>
+			<string>hdf_df24_addimage</string>
+			<string>hdf_df24_getimage</string>
+			<string>hdf_df24_getinfo</string>
+			<string>hdf_df24_lastref</string>
+			<string>hdf_df24_nimages</string>
+			<string>hdf_df24_readref</string>
+			<string>hdf_df24_restart</string>
+			<string>hdf_dfan_addfds</string>
+			<string>hdf_dfan_addfid</string>
+			<string>hdf_dfan_getdesc</string>
+			<string>hdf_dfan_getfds</string>
+			<string>hdf_dfan_getfid</string>
+			<string>hdf_dfan_getlabel</string>
+			<string>hdf_dfan_lablist</string>
+			<string>hdf_dfan_lastref</string>
+			<string>hdf_dfan_putdesc</string>
+			<string>hdf_dfan_putlabel</string>
+			<string>hdf_dfp_addpal</string>
+			<string>hdf_dfp_getpal</string>
+			<string>hdf_dfp_lastref</string>
+			<string>hdf_dfp_npals</string>
+			<string>hdf_dfp_putpal</string>
+			<string>hdf_dfp_readref</string>
+			<string>hdf_dfp_restart</string>
+			<string>hdf_dfp_writeref</string>
+			<string>hdf_dfr8_addimage</string>
+			<string>hdf_dfr8_getimage</string>
+			<string>hdf_dfr8_getinfo</string>
+			<string>hdf_dfr8_lastref</string>
+			<string>hdf_dfr8_nimages</string>
+			<string>hdf_dfr8_putimage</string>
+			<string>hdf_dfr8_readref</string>
+			<string>hdf_dfr8_restart</string>
+			<string>hdf_dfr8_setpalette</string>
+			<string>hdf_dupdd</string>
+			<string>hdf_exists</string>
+			<string>hdf_gr_attrinfo</string>
+			<string>hdf_gr_create</string>
+			<string>hdf_gr_end</string>
+			<string>hdf_gr_endaccess</string>
+			<string>hdf_gr_fileinfo</string>
+			<string>hdf_gr_findattr</string>
+			<string>hdf_gr_getattr</string>
+			<string>hdf_gr_getchunkinfo</string>
+			<string>hdf_gr_getiminfo</string>
+			<string>hdf_gr_getlutid</string>
+			<string>hdf_gr_getlutinfo</string>
+			<string>hdf_gr_idtoref</string>
+			<string>hdf_gr_luttoref</string>
+			<string>hdf_gr_nametoindex</string>
+			<string>hdf_gr_readimage</string>
+			<string>hdf_gr_readlut</string>
+			<string>hdf_gr_reftoindex</string>
+			<string>hdf_gr_select</string>
+			<string>hdf_gr_setattr</string>
+			<string>hdf_gr_setchunk</string>
+			<string>hdf_gr_setchunkcache</string>
+			<string>hdf_gr_setcompress</string>
+			<string>hdf_gr_setexternalfile</string>
+			<string>hdf_gr_start</string>
+			<string>hdf_gr_writeimage</string>
+			<string>hdf_gr_writelut</string>
+			<string>hdf_hdf2idltype</string>
+			<string>hdf_idl2hdftype</string>
+			<string>hdf_ishdf</string>
+			<string>hdf_lib_info</string>
+			<string>hdf_newref</string>
+			<string>hdf_number</string>
+			<string>hdf_open</string>
+			<string>hdf_packdata</string>
 			<string>hdf_read</string>
+			<string>hdf_sd_adddata</string>
+			<string>hdf_sd_attrfind</string>
+			<string>hdf_sd_attrinfo</string>
+			<string>hdf_sd_attrset</string>
+			<string>hdf_sd_create</string>
+			<string>hdf_sd_dimget</string>
+			<string>hdf_sd_dimgetid</string>
+			<string>hdf_sd_dimset</string>
+			<string>hdf_sd_end</string>
+			<string>hdf_sd_endaccess</string>
+			<string>hdf_sd_fileinfo</string>
+			<string>hdf_sd_getdata</string>
+			<string>hdf_sd_getinfo</string>
+			<string>hdf_sd_idtoref</string>
+			<string>hdf_sd_iscoordvar</string>
+			<string>hdf_sd_nametoindex</string>
+			<string>hdf_sd_reftoindex</string>
+			<string>hdf_sd_select</string>
+			<string>hdf_sd_setcompress</string>
+			<string>hdf_sd_setextfile</string>
+			<string>hdf_sd_setinfo</string>
+			<string>hdf_sd_start</string>
+			<string>hdf_unpackdata</string>
+			<string>hdf_vd_attach</string>
+			<string>hdf_vd_attrfind</string>
+			<string>hdf_vd_attrinfo</string>
+			<string>hdf_vd_attrset</string>
+			<string>hdf_vd_detach</string>
+			<string>hdf_vd_fdefine</string>
+			<string>hdf_vd_fexist</string>
+			<string>hdf_vd_find</string>
+			<string>hdf_vd_get</string>
+			<string>hdf_vd_getid</string>
+			<string>hdf_vd_getinfo</string>
+			<string>hdf_vd_insert</string>
+			<string>hdf_vd_isattr</string>
+			<string>hdf_vd_isvd</string>
+			<string>hdf_vd_isvg</string>
+			<string>hdf_vd_lone</string>
+			<string>hdf_vd_nattrs</string>
+			<string>hdf_vd_read</string>
+			<string>hdf_vd_seek</string>
+			<string>hdf_vd_setinfo</string>
+			<string>hdf_vd_write</string>
+			<string>hdf_vg_addtr</string>
+			<string>hdf_vg_attach</string>
+			<string>hdf_vg_detach</string>
+			<string>hdf_vg_getid</string>
+			<string>hdf_vg_getinfo</string>
+			<string>hdf_vg_getnext</string>
+			<string>hdf_vg_gettr</string>
+			<string>hdf_vg_gettrs</string>
+			<string>hdf_vg_inqtr</string>
+			<string>hdf_vg_insert</string>
+			<string>hdf_vg_isvd</string>
+			<string>hdf_vg_isvg</string>
+			<string>hdf_vg_lone</string>
+			<string>hdf_vg_number</string>
+			<string>hdf_vg_setinfo</string>
 			<string>heap_free</string>
 			<string>heap_gc</string>
+			<string>heap_nosave</string>
+			<string>heap_refcount</string>
+			<string>heap_save</string>
 			<string>help</string>
 			<string>hilbert</string>
 			<string>histogram</string>
@@ -266,14 +776,27 @@
 			<string>hsv</string>
 			<string>h_eq_ct</string>
 			<string>h_eq_int</string>
+			<string>i18n_multibytetoutf8</string>
+			<string>i18n_multibytetowidechar</string>
+			<string>i18n_utf8tomultibyte</string>
+			<string>i18n_widechartomultibyte</string>
 			<string>ibeta</string>
 			<string>icontour</string>
+			<string>iconvertcoord</string>
+			<string>idelete</string>
 			<string>identity</string>
+			<string>idlexbr_assistant</string>
 			<string>idlitsys_createtool</string>
+			<string>idl_base64</string>
 			<string>idl_validname</string>
-			<string>if</string>
+			<string>iellipse</string>
 			<string>igamma</string>
+			<string>igetcurrent</string>
+			<string>igetdata</string>
+			<string>igetid</string>
+			<string>igetproperty</string>
 			<string>iimage</string>
+			<string>image</string>
 			<string>image_cont</string>
 			<string>image_statistics</string>
 			<string>imaginary</string>
@@ -288,19 +811,35 @@
 			<string>int_tabulated</string>
 			<string>invert</string>
 			<string>ioctl</string>
+			<string>iopen</string>
 			<string>iplot</string>
+			<string>ipolygon</string>
+			<string>ipolyline</string>
+			<string>iputdata</string>
+			<string>iregister</string>
+			<string>ireset</string>
+			<string>iresolve</string>
+			<string>irotate</string>
+			<string>ir_filter</string>
+			<string>isa</string>
+			<string>isave</string>
+			<string>iscale</string>
+			<string>isetcurrent</string>
+			<string>isetproperty</string>
 			<string>ishft</string>
 			<string>isocontour</string>
 			<string>isosurface</string>
 			<string>isurface</string>
-			<string>itcurrent</string>
-			<string>itdelete</string>
-			<string>itgetcurrent</string>
-			<string>itregister</string>
-			<string>itreset</string>
-			<string>itresolve</string>
+			<string>itext</string>
+			<string>itranslate</string>
+			<string>ivector</string>
 			<string>ivolume</string>
+			<string>izoom</string>
+			<string>i_beta</string>
 			<string>journal</string>
+			<string>json_parse</string>
+			<string>json_serialize</string>
+			<string>jul2greg</string>
 			<string>julday</string>
 			<string>keyword_set</string>
 			<string>krig2d</string>
@@ -311,6 +850,7 @@
 			<string>label_region</string>
 			<string>ladfit</string>
 			<string>laguerre</string>
+			<string>laplacian</string>
 			<string>la_choldc</string>
 			<string>la_cholmprove</string>
 			<string>la_cholsol</string>
@@ -334,12 +874,15 @@
 			<string>la_triql</string>
 			<string>la_trired</string>
 			<string>la_trisol</string>
+			<string>least_squares_filter</string>
 			<string>leefilt</string>
+			<string>legend</string>
 			<string>legendre</string>
 			<string>linbcg</string>
 			<string>lindgen</string>
 			<string>linfit</string>
 			<string>linkimage</string>
+			<string>list</string>
 			<string>ll_arc_distance</string>
 			<string>lmfit</string>
 			<string>lmgr</string>
@@ -362,6 +905,10 @@
 			<string>machar</string>
 			<string>make_array</string>
 			<string>make_dll</string>
+			<string>make_rt</string>
+			<string>map</string>
+			<string>mapcontinents</string>
+			<string>mapgrid</string>
 			<string>map_2points</string>
 			<string>map_continents</string>
 			<string>map_grid</string>
@@ -379,6 +926,7 @@
 			<string>md_test</string>
 			<string>mean</string>
 			<string>meanabsdev</string>
+			<string>mean_filter</string>
 			<string>median</string>
 			<string>memory</string>
 			<string>mesh_clip</string>
@@ -404,13 +952,46 @@
 			<string>morph_open</string>
 			<string>morph_thin</string>
 			<string>morph_tophat</string>
-			<string>mpeg_close</string>
-			<string>mpeg_open</string>
-			<string>mpeg_put</string>
-			<string>mpeg_save</string>
 			<string>multi</string>
 			<string>m_correlate</string>
+			<string>ncdf_attcopy</string>
+			<string>ncdf_attdel</string>
+			<string>ncdf_attget</string>
+			<string>ncdf_attinq</string>
+			<string>ncdf_attname</string>
+			<string>ncdf_attput</string>
+			<string>ncdf_attrename</string>
+			<string>ncdf_close</string>
+			<string>ncdf_control</string>
+			<string>ncdf_create</string>
+			<string>ncdf_dimdef</string>
+			<string>ncdf_dimid</string>
+			<string>ncdf_dimidsinq</string>
+			<string>ncdf_diminq</string>
+			<string>ncdf_dimrename</string>
+			<string>ncdf_exists</string>
+			<string>ncdf_fullgroupname</string>
+			<string>ncdf_groupdef</string>
+			<string>ncdf_groupname</string>
+			<string>ncdf_groupparent</string>
+			<string>ncdf_groupsinq</string>
+			<string>ncdf_inquire</string>
+			<string>ncdf_ncidinq</string>
+			<string>ncdf_open</string>
+			<string>ncdf_unlimdimsinq</string>
+			<string>ncdf_vardef</string>
+			<string>ncdf_varget</string>
+			<string>ncdf_varget1</string>
+			<string>ncdf_varid</string>
+			<string>ncdf_varidsinq</string>
+			<string>ncdf_varinq</string>
+			<string>ncdf_varput</string>
+			<string>ncdf_varrename</string>
 			<string>newton</string>
+			<string>noise_hurl</string>
+			<string>noise_pick</string>
+			<string>noise_scatter</string>
+			<string>noise_slur</string>
 			<string>norm</string>
 			<string>n_elements</string>
 			<string>n_params</string>
@@ -418,33 +999,36 @@
 			<string>objarr</string>
 			<string>obj_class</string>
 			<string>obj_destroy</string>
+			<string>obj_hasmethod</string>
 			<string>obj_isa</string>
 			<string>obj_new</string>
 			<string>obj_valid</string>
 			<string>online_help</string>
-			<string>online_help_pdf_index</string>
 			<string>on_error</string>
-			<string>on_ioerror</string>
-			<string>openr</string>
-			<string>openw</string>
+			<string>open</string>
 			<string>oplot</string>
 			<string>oploterr</string>
+			<string>parse_url</string>
 			<string>particle_trace</string>
 			<string>path_cache</string>
 			<string>path_sep</string>
 			<string>pcomp</string>
 			<string>plot</string>
+			<string>plot3d</string>
 			<string>ploterr</string>
 			<string>plots</string>
 			<string>plot_3dbox</string>
 			<string>plot_field</string>
 			<string>pnt_line</string>
 			<string>point_lun</string>
+			<string>polarplot</string>
 			<string>polar_contour</string>
 			<string>polar_surface</string>
 			<string>poly</string>
 			<string>polyfill</string>
 			<string>polyfillv</string>
+			<string>polygon</string>
+			<string>polyline</string>
 			<string>polyshade</string>
 			<string>polywarp</string>
 			<string>poly_2d</string>
@@ -452,11 +1036,13 @@
 			<string>poly_fit</string>
 			<string>popd</string>
 			<string>powell</string>
+			<string>pref_commit</string>
+			<string>pref_get</string>
+			<string>pref_set</string>
+			<string>prewitt</string>
 			<string>primes</string>
 			<string>print</string>
 			<string>printd</string>
-			<string>printf</string>
-			<string>pro</string>
 			<string>product</string>
 			<string>profile</string>
 			<string>profiler</string>
@@ -476,7 +1062,9 @@
 			<string>qromb</string>
 			<string>qromo</string>
 			<string>qsimp</string>
+			<string>query_ascii</string>
 			<string>query_bmp</string>
+			<string>query_csv</string>
 			<string>query_dicom</string>
 			<string>query_gif</string>
 			<string>query_image</string>
@@ -495,12 +1083,12 @@
 			<string>ranks</string>
 			<string>rdpix</string>
 			<string>read</string>
-			<string>readf</string>
 			<string>reads</string>
 			<string>readu</string>
 			<string>read_ascii</string>
 			<string>read_binary</string>
 			<string>read_bmp</string>
+			<string>read_csv</string>
 			<string>read_dicom</string>
 			<string>read_gif</string>
 			<string>read_image</string>
@@ -528,7 +1116,6 @@
 			<string>region_grow</string>
 			<string>register_cursor</string>
 			<string>regress</string>
-			<string>repeat</string>
 			<string>replicate</string>
 			<string>replicate_inplace</string>
 			<string>resolve_all</string>
@@ -542,6 +1129,7 @@
 			<string>rot</string>
 			<string>rotate</string>
 			<string>round</string>
+			<string>routine_filepath</string>
 			<string>routine_info</string>
 			<string>rs_test</string>
 			<string>r_correlate</string>
@@ -551,12 +1139,16 @@
 			<string>scale3</string>
 			<string>scale3d</string>
 			<string>scope_level</string>
+			<string>scope_traceback</string>
 			<string>scope_varfetch</string>
 			<string>scope_varname</string>
 			<string>search2d</string>
 			<string>search3d</string>
+			<string>sem_create</string>
+			<string>sem_delete</string>
+			<string>sem_lock</string>
+			<string>sem_release</string>
 			<string>setenv</string>
-			<string>setup_keys</string>
 			<string>set_plot</string>
 			<string>set_shading</string>
 			<string>sfit</string>
@@ -564,6 +1156,7 @@
 			<string>shade_surf_irr</string>
 			<string>shade_volume</string>
 			<string>shift</string>
+			<string>shift_diff</string>
 			<string>shmdebug</string>
 			<string>shmmap</string>
 			<string>shmunmap</string>
@@ -626,7 +1219,7 @@
 			<string>svsol</string>
 			<string>swap_endian</string>
 			<string>swap_endian_inplace</string>
-			<string>switch</string>
+			<string>symbol</string>
 			<string>systime</string>
 			<string>s_test</string>
 			<string>t3d</string>
@@ -638,6 +1231,7 @@
 			<string>tetra_clip</string>
 			<string>tetra_surface</string>
 			<string>tetra_volume</string>
+			<string>text</string>
 			<string>thin</string>
 			<string>threed</string>
 			<string>timegen</string>
@@ -662,7 +1256,8 @@
 			<string>tvlct</string>
 			<string>tvrd</string>
 			<string>tvscl</string>
-			<string>t_cvf</string>
+			<string>typename</string>
+			<string>t_cvt</string>
 			<string>t_pdf</string>
 			<string>uindgen</string>
 			<string>uint</string>
@@ -678,6 +1273,7 @@
 			<string>usersym</string>
 			<string>value_locate</string>
 			<string>variance</string>
+			<string>vector</string>
 			<string>vector_field</string>
 			<string>vel</string>
 			<string>velovect</string>
@@ -691,13 +1287,11 @@
 			<string>wdelete</string>
 			<string>wf_draw</string>
 			<string>where</string>
-			<string>while</string>
-			<string>widget_activex</string>
 			<string>widget_base</string>
 			<string>widget_button</string>
 			<string>widget_combobox</string>
 			<string>widget_control</string>
-			<string>widget_displaycontextmenu</string>
+			<string>widget_displaycontextmen</string>
 			<string>widget_draw</string>
 			<string>widget_droplist</string>
 			<string>widget_event</string>
@@ -710,9 +1304,13 @@
 			<string>widget_table</string>
 			<string>widget_text</string>
 			<string>widget_tree</string>
+			<string>widget_tree_move</string>
+			<string>widget_window</string>
+			<string>wiener_filter</string>
 			<string>window</string>
 			<string>writeu</string>
 			<string>write_bmp</string>
+			<string>write_csv</string>
 			<string>write_gif</string>
 			<string>write_image</string>
 			<string>write_jpeg</string>
@@ -730,6 +1328,24 @@
 			<string>wset</string>
 			<string>wshow</string>
 			<string>wtn</string>
+			<string>wv_applet</string>
+			<string>wv_cwt</string>
+			<string>wv_cw_wavelet</string>
+			<string>wv_denoise</string>
+			<string>wv_dwt</string>
+			<string>wv_fn_coiflet</string>
+			<string>wv_fn_daubechies</string>
+			<string>wv_fn_gaussian</string>
+			<string>wv_fn_haar</string>
+			<string>wv_fn_morlet</string>
+			<string>wv_fn_paul</string>
+			<string>wv_fn_symlet</string>
+			<string>wv_import_data</string>
+			<string>wv_import_wavelet</string>
+			<string>wv_plot3d_wps</string>
+			<string>wv_plot_multires</string>
+			<string>wv_pwt</string>
+			<string>wv_tool_denoise</string>
 			<string>xbm_edit</string>
 			<string>xdisplayfile</string>
 			<string>xdxf</string>
@@ -775,8 +1391,10 @@
 			<string>ATAN</string>
 			<string>AXIS</string>
 			<string>A_CORRELATE</string>
+			<string>BANDPASS_FILTER</string>
+			<string>BANDREJECT_FILTER</string>
+			<string>BARPLOT</string>
 			<string>BAR_PLOT</string>
-			<string>BEGIN</string>
 			<string>BESELI</string>
 			<string>BESELJ</string>
 			<string>BESELK</string>
@@ -787,12 +1405,14 @@
 			<string>BINDGEN</string>
 			<string>BINOMIAL</string>
 			<string>BIN_DATE</string>
+			<string>BIT_FFS</string>
+			<string>BIT_POPULATION</string>
 			<string>BLAS_AXPY</string>
 			<string>BLK_CON</string>
 			<string>BOX_CURSOR</string>
-			<string>BREAK</string>
 			<string>BREAKPOINT</string>
 			<string>BROYDEN</string>
+			<string>BUTTERWORTH</string>
 			<string>BYTARR</string>
 			<string>BYTE</string>
 			<string>BYTEORDER</string>
@@ -803,9 +1423,53 @@
 			<string>CALL_FUNCTION</string>
 			<string>CALL_METHOD</string>
 			<string>CALL_PROCEDURE</string>
-			<string>CASE</string>
+			<string>CANNY</string>
 			<string>CATCH</string>
 			<string>CD</string>
+			<string>CDF_ATTCREATE</string>
+			<string>CDF_ATTDELETE</string>
+			<string>CDF_ATTEXISTS</string>
+			<string>CDF_ATTGET</string>
+			<string>CDF_ATTGET_ENTRY</string>
+			<string>CDF_ATTINQ</string>
+			<string>CDF_ATTNUM</string>
+			<string>CDF_ATTPUT</string>
+			<string>CDF_ATTRENAME</string>
+			<string>CDF_CLOSE</string>
+			<string>CDF_COMPRESSION</string>
+			<string>CDF_CONTROL</string>
+			<string>CDF_CREATE</string>
+			<string>CDF_DELETE</string>
+			<string>CDF_DOC</string>
+			<string>CDF_ENCODE_EPOCH</string>
+			<string>CDF_ENCODE_EPOCH16</string>
+			<string>CDF_ENCODE_TT2000</string>
+			<string>CDF_EPOCH</string>
+			<string>CDF_EPOCH16</string>
+			<string>CDF_EPOCH_COMPARE</string>
+			<string>CDF_EPOCH_DIFF</string>
+			<string>CDF_EPOCH_TOJULDAYS</string>
+			<string>CDF_ERROR</string>
+			<string>CDF_EXISTS</string>
+			<string>CDF_INQUIRE</string>
+			<string>CDF_LEAPSECONDS_INFO</string>
+			<string>CDF_LIB_INFO</string>
+			<string>CDF_OPEN</string>
+			<string>CDF_PARSE_EPOCH</string>
+			<string>CDF_PARSE_EPOCH16</string>
+			<string>CDF_PARSE_TT2000</string>
+			<string>CDF_SET_CDF27_BACKWARD_C</string>
+			<string>CDF_SET_MD5CHECKSUM</string>
+			<string>CDF_SET_VALIDATE</string>
+			<string>CDF_TT2000</string>
+			<string>CDF_VARCREATE</string>
+			<string>CDF_VARDELETE</string>
+			<string>CDF_VARGET</string>
+			<string>CDF_VARGET1</string>
+			<string>CDF_VARINQ</string>
+			<string>CDF_VARNUM</string>
+			<string>CDF_VARPUT</string>
+			<string>CDF_VARRENAME</string>
 			<string>CEIL</string>
 			<string>CHEBYSHEV</string>
 			<string>CHECK_MATH</string>
@@ -819,12 +1483,19 @@
 			<string>CLUSTER</string>
 			<string>CLUSTER_TREE</string>
 			<string>CLUST_WTS</string>
+			<string>CMYK_CONVERT</string>
+			<string>COLORBAR</string>
+			<string>COLORIZE_SAMPLE</string>
 			<string>COLORMAP_APPLICABLE</string>
+			<string>COLORMAP_GRADIENT</string>
+			<string>COLORMAP_ROTATION</string>
+			<string>COLORTABLE</string>
 			<string>COLOR_CONVERT</string>
+			<string>COLOR_EXCHANGE</string>
 			<string>COLOR_QUAN</string>
+			<string>COLOR_RANGE_MAP</string>
 			<string>COMFIT</string>
-			<string>COMMON</string>
-			<string>COMPILE_OPT</string>
+			<string>COMMAND_LINE_ARGS</string>
 			<string>COMPLEX</string>
 			<string>COMPLEXARR</string>
 			<string>COMPLEXROUND</string>
@@ -833,10 +1504,10 @@
 			<string>CONGRID</string>
 			<string>CONJ</string>
 			<string>CONSTRAINED_MIN</string>
-			<string>CONTINUE</string>
 			<string>CONTOUR</string>
 			<string>CONVERT_COORD</string>
 			<string>CONVOL</string>
+			<string>CONVOL_FFT</string>
 			<string>COORD2TO3</string>
 			<string>COPY_LUN</string>
 			<string>CORRELATE</string>
@@ -881,6 +1552,7 @@
 			<string>CW_ZOOM</string>
 			<string>C_CORRELATE</string>
 			<string>DBLARR</string>
+			<string>DB_EXISTS</string>
 			<string>DCINDGEN</string>
 			<string>DCOMPLEX</string>
 			<string>DCOMPLEXARR</string>
@@ -898,6 +1570,7 @@
 			<string>DEVICE</string>
 			<string>DFPMIN</string>
 			<string>DIAG_MATRIX</string>
+			<string>DIALOG_DBCONNECT</string>
 			<string>DIALOG_MESSAGE</string>
 			<string>DIALOG_PICKFILE</string>
 			<string>DIALOG_PRINTERSETUP</string>
@@ -915,19 +1588,152 @@
 			<string>DOC_LIBRARY</string>
 			<string>DOUBLE</string>
 			<string>DRAW_ROI</string>
+			<string>EDGE_DOG</string>
 			<string>EFONT</string>
 			<string>EIGENQL</string>
 			<string>EIGENVEC</string>
+			<string>ELLIPSE</string>
 			<string>ELMHES</string>
+			<string>EMBOSS</string>
 			<string>EMPTY</string>
 			<string>ENABLE_SYSRTN</string>
 			<string>EOF</string>
+			<string>EOS_EH_CONVANG</string>
+			<string>EOS_EH_GETVERSION</string>
+			<string>EOS_EH_IDINFO</string>
+			<string>EOS_EXISTS</string>
+			<string>EOS_GD_ATTACH</string>
+			<string>EOS_GD_ATTRINFO</string>
+			<string>EOS_GD_BLKSOMOFFSET</string>
+			<string>EOS_GD_CLOSE</string>
+			<string>EOS_GD_COMPINFO</string>
+			<string>EOS_GD_CREATE</string>
+			<string>EOS_GD_DEFBOXREGION</string>
+			<string>EOS_GD_DEFCOMP</string>
+			<string>EOS_GD_DEFDIM</string>
+			<string>EOS_GD_DEFFIELD</string>
+			<string>EOS_GD_DEFORIGIN</string>
+			<string>EOS_GD_DEFPIXREG</string>
+			<string>EOS_GD_DEFPROJ</string>
+			<string>EOS_GD_DEFTILE</string>
+			<string>EOS_GD_DEFVRTREGION</string>
+			<string>EOS_GD_DETACH</string>
+			<string>EOS_GD_DIMINFO</string>
+			<string>EOS_GD_DUPREGION</string>
+			<string>EOS_GD_EXTRACTREGION</string>
+			<string>EOS_GD_FIELDINFO</string>
+			<string>EOS_GD_GETFILLVALUE</string>
+			<string>EOS_GD_GETPIXELS</string>
+			<string>EOS_GD_GETPIXVALUES</string>
+			<string>EOS_GD_GRIDINFO</string>
+			<string>EOS_GD_INQATTRS</string>
+			<string>EOS_GD_INQDIMS</string>
+			<string>EOS_GD_INQFIELDS</string>
+			<string>EOS_GD_INQGRID</string>
+			<string>EOS_GD_INTERPOLATE</string>
+			<string>EOS_GD_NENTRIES</string>
+			<string>EOS_GD_OPEN</string>
+			<string>EOS_GD_ORIGININFO</string>
+			<string>EOS_GD_PIXREGINFO</string>
+			<string>EOS_GD_PROJINFO</string>
+			<string>EOS_GD_QUERY</string>
+			<string>EOS_GD_READATTR</string>
+			<string>EOS_GD_READFIELD</string>
+			<string>EOS_GD_READTILE</string>
+			<string>EOS_GD_REGIONINFO</string>
+			<string>EOS_GD_SETFILLVALUE</string>
+			<string>EOS_GD_SETTILECACHE</string>
+			<string>EOS_GD_TILEINFO</string>
+			<string>EOS_GD_WRITEATTR</string>
+			<string>EOS_GD_WRITEFIELD</string>
+			<string>EOS_GD_WRITEFIELDMETA</string>
+			<string>EOS_GD_WRITETILE</string>
+			<string>EOS_PT_ATTACH</string>
+			<string>EOS_PT_ATTRINFO</string>
+			<string>EOS_PT_BCKLINKINFO</string>
+			<string>EOS_PT_CLOSE</string>
+			<string>EOS_PT_CREATE</string>
+			<string>EOS_PT_DEFBOXREGION</string>
+			<string>EOS_PT_DEFLEVEL</string>
+			<string>EOS_PT_DEFLINKAGE</string>
+			<string>EOS_PT_DEFTIMEPERIOD</string>
+			<string>EOS_PT_DEFVRTREGION</string>
+			<string>EOS_PT_DETACH</string>
+			<string>EOS_PT_EXTRACTPERIOD</string>
+			<string>EOS_PT_EXTRACTREGION</string>
+			<string>EOS_PT_FWDLINKINFO</string>
+			<string>EOS_PT_GETLEVELNAME</string>
+			<string>EOS_PT_GETRECNUMS</string>
+			<string>EOS_PT_INQATTRS</string>
+			<string>EOS_PT_INQPOINT</string>
+			<string>EOS_PT_LEVELINDX</string>
+			<string>EOS_PT_LEVELINFO</string>
+			<string>EOS_PT_NFIELDS</string>
+			<string>EOS_PT_NLEVELS</string>
+			<string>EOS_PT_NRECS</string>
+			<string>EOS_PT_OPEN</string>
+			<string>EOS_PT_PERIODINFO</string>
+			<string>EOS_PT_PERIODRECS</string>
+			<string>EOS_PT_QUERY</string>
+			<string>EOS_PT_READATTR</string>
+			<string>EOS_PT_READLEVEL</string>
+			<string>EOS_PT_REGIONINFO</string>
+			<string>EOS_PT_REGIONRECS</string>
+			<string>EOS_PT_SIZEOF</string>
+			<string>EOS_PT_UPDATELEVEL</string>
+			<string>EOS_PT_WRITEATTR</string>
+			<string>EOS_PT_WRITELEVEL</string>
+			<string>EOS_QUERY</string>
+			<string>EOS_SW_ATTACH</string>
+			<string>EOS_SW_ATTRINFO</string>
+			<string>EOS_SW_CLOSE</string>
+			<string>EOS_SW_COMPINFO</string>
+			<string>EOS_SW_CREATE</string>
+			<string>EOS_SW_DEFBOXREGION</string>
+			<string>EOS_SW_DEFCOMP</string>
+			<string>EOS_SW_DEFDATAFIELD</string>
+			<string>EOS_SW_DEFDIM</string>
+			<string>EOS_SW_DEFDIMMAP</string>
+			<string>EOS_SW_DEFGEOFIELD</string>
+			<string>EOS_SW_DEFIDXMAP</string>
+			<string>EOS_SW_DEFTIMEPERIOD</string>
+			<string>EOS_SW_DEFVRTREGION</string>
+			<string>EOS_SW_DETACH</string>
+			<string>EOS_SW_DIMINFO</string>
+			<string>EOS_SW_DUPREGION</string>
+			<string>EOS_SW_EXTRACTPERIOD</string>
+			<string>EOS_SW_EXTRACTREGION</string>
+			<string>EOS_SW_FIELDINFO</string>
+			<string>EOS_SW_GETFILLVALUE</string>
+			<string>EOS_SW_IDXMAPINFO</string>
+			<string>EOS_SW_INQATTRS</string>
+			<string>EOS_SW_INQDATAFIELDS</string>
+			<string>EOS_SW_INQDIMS</string>
+			<string>EOS_SW_INQGEOFIELDS</string>
+			<string>EOS_SW_INQIDXMAPS</string>
+			<string>EOS_SW_INQMAPS</string>
+			<string>EOS_SW_INQSWATH</string>
+			<string>EOS_SW_MAPINFO</string>
+			<string>EOS_SW_NENTRIES</string>
+			<string>EOS_SW_OPEN</string>
+			<string>EOS_SW_PERIODINFO</string>
+			<string>EOS_SW_QUERY</string>
+			<string>EOS_SW_READATTR</string>
+			<string>EOS_SW_READFIELD</string>
+			<string>EOS_SW_REGIONINFO</string>
+			<string>EOS_SW_SETFILLVALUE</string>
+			<string>EOS_SW_WRITEATTR</string>
+			<string>EOS_SW_WRITEDATAMETA</string>
+			<string>EOS_SW_WRITEFIELD</string>
+			<string>EOS_SW_WRITEGEOMETA</string>
 			<string>ERASE</string>
 			<string>ERF</string>
 			<string>ERFC</string>
 			<string>ERFCX</string>
 			<string>ERODE</string>
+			<string>ERRORPLOT</string>
 			<string>ERRPLOT</string>
+			<string>ESTIMATOR_FILTER</string>
 			<string>EXECUTE</string>
 			<string>EXIT</string>
 			<string>EXP</string>
@@ -950,6 +1756,7 @@
 			<string>FILE_LINK</string>
 			<string>FILE_MKDIR</string>
 			<string>FILE_MOVE</string>
+			<string>FILE_POLL_INPUT</string>
 			<string>FILE_READLINK</string>
 			<string>FILE_SAME</string>
 			<string>FILE_SEARCH</string>
@@ -964,14 +1771,11 @@
 			<string>FLOW3</string>
 			<string>FLTARR</string>
 			<string>FLUSH</string>
-			<string>FOR</string>
 			<string>FORMAT_AXIS_VALUES</string>
-			<string>FORWARD_FUNCTION</string>
 			<string>FREE_LUN</string>
 			<string>FSTAT</string>
 			<string>FULSTR</string>
 			<string>FUNCT</string>
-			<string>FUNCTION</string>
 			<string>FV_TEST</string>
 			<string>FX_ROOT</string>
 			<string>FZ_ROOTS</string>
@@ -981,26 +1785,348 @@
 			<string>GAMMA_CT</string>
 			<string>GAUSS2DFIT</string>
 			<string>GAUSSFIT</string>
+			<string>GAUSSIAN_FUNCTION</string>
 			<string>GAUSSINT</string>
 			<string>GAUSS_CVF</string>
 			<string>GAUSS_PDF</string>
+			<string>GAUSS_SMOOTH</string>
 			<string>GETENV</string>
+			<string>GETWINDOWS</string>
 			<string>GET_DRIVE_LIST</string>
+			<string>GET_DXF_OBJECTS</string>
 			<string>GET_KBRD</string>
+			<string>GET_LOGIN_INFO</string>
 			<string>GET_LUN</string>
 			<string>GET_SCREEN_SIZE</string>
-			<string>GOTO</string>
+			<string>GREG2JUL</string>
+			<string>GRIB_CLONE</string>
+			<string>GRIB_CLOSE</string>
+			<string>GRIB_COUNT</string>
+			<string>GRIB_FIND_NEAREST</string>
+			<string>GRIB_GET</string>
+			<string>GRIB_GET_API_VERSION</string>
+			<string>GRIB_GET_ARRAY</string>
+			<string>GRIB_GET_DOUBLE_ELEMENTS</string>
+			<string>GRIB_GET_MESSAGE_SIZE</string>
+			<string>GRIB_GET_NATIVE_TYPE</string>
+			<string>GRIB_GET_SIZE</string>
+			<string>GRIB_GET_VALUES</string>
+			<string>GRIB_GRIBEX_MODE</string>
+			<string>GRIB_GTS_HEADER</string>
+			<string>GRIB_INDEX_GET</string>
+			<string>GRIB_INDEX_GET_SIZE</string>
+			<string>GRIB_INDEX_NEW_FROM_FILE</string>
+			<string>GRIB_INDEX_READ</string>
+			<string>GRIB_INDEX_RELEASE</string>
+			<string>GRIB_INDEX_SELECT</string>
+			<string>GRIB_INDEX_WRITE</string>
+			<string>GRIB_IS_MISSING</string>
+			<string>GRIB_ITERATOR_DELETE</string>
+			<string>GRIB_ITERATOR_NEW</string>
+			<string>GRIB_ITERATOR_NEXT</string>
+			<string>GRIB_KEYS_ITERATOR_DELETE</string>
+			<string>GRIB_KEYS_ITERATOR_GET_NAME</string>
+			<string>GRIB_KEYS_ITERATOR_NEW</string>
+			<string>GRIB_KEYS_ITERATOR_NEXT</string>
+			<string>GRIB_KEYS_ITERATOR_REWIND</string>
+			<string>GRIB_MULTI_APPEND</string>
+			<string>GRIB_MULTI_NEW</string>
+			<string>GRIB_MULTI_RELEASE</string>
+			<string>GRIB_MULTI_SUPPORT</string>
+			<string>GRIB_MULTI_WRITE</string>
+			<string>GRIB_NEW_FROM_FILE</string>
+			<string>GRIB_NEW_FROM_INDEX</string>
+			<string>GRIB_NEW_FROM_SAMPLES</string>
+			<string>GRIB_OPEN</string>
+			<string>GRIB_RELEASE</string>
+			<string>GRIB_SET</string>
+			<string>GRIB_SET_ARRAY</string>
+			<string>GRIB_SET_MISSING</string>
+			<string>GRIB_SET_VALUES</string>
+			<string>GRIB_WRITE_MESSAGE</string>
 			<string>GRID3</string>
 			<string>GRIDDATA</string>
 			<string>GRID_INPUT</string>
 			<string>GRID_TPS</string>
 			<string>GS_ITER</string>
+			<string>H5A_CLOSE</string>
+			<string>H5A_CREATE</string>
+			<string>H5A_DELETE</string>
+			<string>H5A_GET_NAME</string>
+			<string>H5A_GET_NUM_ATTRS</string>
+			<string>H5A_GET_SPACE</string>
+			<string>H5A_GET_TYPE</string>
+			<string>H5A_OPEN_IDX</string>
+			<string>H5A_OPEN_NAME</string>
+			<string>H5A_READ</string>
+			<string>H5A_WRITE</string>
+			<string>H5D_CLOSE</string>
+			<string>H5D_CREATE</string>
+			<string>H5D_EXTEND</string>
+			<string>H5D_GET_SPACE</string>
+			<string>H5D_GET_STORAGE_SIZE</string>
+			<string>H5D_GET_TYPE</string>
+			<string>H5D_OPEN</string>
+			<string>H5D_READ</string>
+			<string>H5D_WRITE</string>
+			<string>H5F_CLOSE</string>
+			<string>H5F_CREATE</string>
+			<string>H5F_IS_HDF5</string>
+			<string>H5F_OPEN</string>
+			<string>H5G_CLOSE</string>
+			<string>H5G_CREATE</string>
+			<string>H5G_GET_COMMENT</string>
+			<string>H5G_GET_LINKVAL</string>
+			<string>H5G_GET_MEMBER_NAME</string>
+			<string>H5G_GET_NMEMBERS</string>
+			<string>H5G_GET_NUM_OBJS</string>
+			<string>H5G_GET_OBJINFO</string>
+			<string>H5G_GET_OBJ_NAME_BY_IDX</string>
+			<string>H5G_LINK</string>
+			<string>H5G_MOVE</string>
+			<string>H5G_OPEN</string>
+			<string>H5G_SET_COMMENT</string>
+			<string>H5G_UNLINK</string>
+			<string>H5I_GET_FILE_ID</string>
+			<string>H5I_GET_TYPE</string>
+			<string>H5R_CREATE</string>
+			<string>H5R_DEREFERENCE</string>
+			<string>H5R_GET_OBJECT_TYPE</string>
+			<string>H5R_GET_REGION</string>
+			<string>H5S_CLOSE</string>
+			<string>H5S_COPY</string>
+			<string>H5S_CREATE_SCALAR</string>
+			<string>H5S_CREATE_SIMPLE</string>
+			<string>H5S_GET_SELECT_BOUNDS</string>
+			<string>H5S_GET_SELECT_ELEM_NPOI</string>
+			<string>H5S_GET_SELECT_ELEM_POIN</string>
+			<string>H5S_GET_SELECT_HYPER_BLO</string>
+			<string>H5S_GET_SELECT_HYPER_NBL</string>
+			<string>H5S_GET_SELECT_NPOINTS</string>
+			<string>H5S_GET_SIMPLE_EXTENT_DI</string>
+			<string>H5S_GET_SIMPLE_EXTENT_ND</string>
+			<string>H5S_GET_SIMPLE_EXTENT_NP</string>
+			<string>H5S_GET_SIMPLE_EXTENT_TY</string>
+			<string>H5S_IS_SIMPLE</string>
+			<string>H5S_OFFSET_SIMPLE</string>
+			<string>H5S_SELECT_ALL</string>
+			<string>H5S_SELECT_ELEMENTS</string>
+			<string>H5S_SELECT_HYPERSLAB</string>
+			<string>H5S_SELECT_NONE</string>
+			<string>H5S_SELECT_VALID</string>
+			<string>H5S_SET_EXTENT_NONE</string>
+			<string>H5S_SET_EXTENT_SIMPLE</string>
+			<string>H5T_ARRAY_CREATE</string>
+			<string>H5T_CLOSE</string>
+			<string>H5T_COMMIT</string>
+			<string>H5T_COMMITTED</string>
+			<string>H5T_COMPOUND_CREATE</string>
+			<string>H5T_COPY</string>
+			<string>H5T_ENUM_CREATE</string>
+			<string>H5T_ENUM_GET_DATA</string>
+			<string>H5T_ENUM_INSERT</string>
+			<string>H5T_ENUM_NAMEOF</string>
+			<string>H5T_ENUM_SET_DATA</string>
+			<string>H5T_ENUM_VALUEOF</string>
+			<string>H5T_ENUM_VALUES_TO_NAMES</string>
+			<string>H5T_EQUAL</string>
+			<string>H5T_GET_ARRAY_DIMS</string>
+			<string>H5T_GET_ARRAY_NDIMS</string>
+			<string>H5T_GET_CLASS</string>
+			<string>H5T_GET_CSET</string>
+			<string>H5T_GET_EBIAS</string>
+			<string>H5T_GET_FIELDS</string>
+			<string>H5T_GET_INPAD</string>
+			<string>H5T_GET_MEMBER_CLASS</string>
+			<string>H5T_GET_MEMBER_INDEX</string>
+			<string>H5T_GET_MEMBER_NAME</string>
+			<string>H5T_GET_MEMBER_OFFSET</string>
+			<string>H5T_GET_MEMBER_TYPE</string>
+			<string>H5T_GET_MEMBER_VALUE</string>
+			<string>H5T_GET_NMEMBERS</string>
+			<string>H5T_GET_NORM</string>
+			<string>H5T_GET_OFFSET</string>
+			<string>H5T_GET_ORDER</string>
+			<string>H5T_GET_PAD</string>
+			<string>H5T_GET_PRECISION</string>
+			<string>H5T_GET_SIGN</string>
+			<string>H5T_GET_SIZE</string>
+			<string>H5T_GET_STRPAD</string>
+			<string>H5T_GET_SUPER</string>
+			<string>H5T_GET_TAG</string>
+			<string>H5T_IDLTYPE</string>
+			<string>H5T_IDL_CREATE</string>
+			<string>H5T_INSERT</string>
+			<string>H5T_MEMTYPE</string>
+			<string>H5T_OPEN</string>
+			<string>H5T_REFERENCE_CREATE</string>
+			<string>H5T_SET_TAG</string>
+			<string>H5T_STR_TO_VLEN</string>
+			<string>H5T_VLEN_CREATE</string>
+			<string>H5T_VLEN_TO_STR</string>
 			<string>H5_BROWSER</string>
+			<string>H5_CLOSE</string>
+			<string>H5_CREATE</string>
+			<string>H5_GET_LIBVERSION</string>
+			<string>H5_OPEN</string>
+			<string>H5_PARSE</string>
 			<string>HANNING</string>
+			<string>HASH</string>
+			<string>HDF_AN_ANNLEN</string>
+			<string>HDF_AN_ANNLIST</string>
+			<string>HDF_AN_ATYPE2TAG</string>
+			<string>HDF_AN_CREATE</string>
+			<string>HDF_AN_CREATEF</string>
+			<string>HDF_AN_END</string>
+			<string>HDF_AN_ENDACCESS</string>
+			<string>HDF_AN_FILEINFO</string>
+			<string>HDF_AN_GET_TAGREF</string>
+			<string>HDF_AN_ID2TAGREF</string>
+			<string>HDF_AN_NUMANN</string>
+			<string>HDF_AN_READANN</string>
+			<string>HDF_AN_SELECT</string>
+			<string>HDF_AN_START</string>
+			<string>HDF_AN_TAG2ATYPE</string>
+			<string>HDF_AN_TAGREF2ID</string>
+			<string>HDF_AN_WRITEANN</string>
 			<string>HDF_BROWSER</string>
+			<string>HDF_CLOSE</string>
+			<string>HDF_DELDD</string>
+			<string>HDF_DF24_ADDIMAGE</string>
+			<string>HDF_DF24_GETIMAGE</string>
+			<string>HDF_DF24_GETINFO</string>
+			<string>HDF_DF24_LASTREF</string>
+			<string>HDF_DF24_NIMAGES</string>
+			<string>HDF_DF24_READREF</string>
+			<string>HDF_DF24_RESTART</string>
+			<string>HDF_DFAN_ADDFDS</string>
+			<string>HDF_DFAN_ADDFID</string>
+			<string>HDF_DFAN_GETDESC</string>
+			<string>HDF_DFAN_GETFDS</string>
+			<string>HDF_DFAN_GETFID</string>
+			<string>HDF_DFAN_GETLABEL</string>
+			<string>HDF_DFAN_LABLIST</string>
+			<string>HDF_DFAN_LASTREF</string>
+			<string>HDF_DFAN_PUTDESC</string>
+			<string>HDF_DFAN_PUTLABEL</string>
+			<string>HDF_DFP_ADDPAL</string>
+			<string>HDF_DFP_GETPAL</string>
+			<string>HDF_DFP_LASTREF</string>
+			<string>HDF_DFP_NPALS</string>
+			<string>HDF_DFP_PUTPAL</string>
+			<string>HDF_DFP_READREF</string>
+			<string>HDF_DFP_RESTART</string>
+			<string>HDF_DFP_WRITEREF</string>
+			<string>HDF_DFR8_ADDIMAGE</string>
+			<string>HDF_DFR8_GETIMAGE</string>
+			<string>HDF_DFR8_GETINFO</string>
+			<string>HDF_DFR8_LASTREF</string>
+			<string>HDF_DFR8_NIMAGES</string>
+			<string>HDF_DFR8_PUTIMAGE</string>
+			<string>HDF_DFR8_READREF</string>
+			<string>HDF_DFR8_RESTART</string>
+			<string>HDF_DFR8_SETPALETTE</string>
+			<string>HDF_DUPDD</string>
+			<string>HDF_EXISTS</string>
+			<string>HDF_GR_ATTRINFO</string>
+			<string>HDF_GR_CREATE</string>
+			<string>HDF_GR_END</string>
+			<string>HDF_GR_ENDACCESS</string>
+			<string>HDF_GR_FILEINFO</string>
+			<string>HDF_GR_FINDATTR</string>
+			<string>HDF_GR_GETATTR</string>
+			<string>HDF_GR_GETCHUNKINFO</string>
+			<string>HDF_GR_GETIMINFO</string>
+			<string>HDF_GR_GETLUTID</string>
+			<string>HDF_GR_GETLUTINFO</string>
+			<string>HDF_GR_IDTOREF</string>
+			<string>HDF_GR_LUTTOREF</string>
+			<string>HDF_GR_NAMETOINDEX</string>
+			<string>HDF_GR_READIMAGE</string>
+			<string>HDF_GR_READLUT</string>
+			<string>HDF_GR_REFTOINDEX</string>
+			<string>HDF_GR_SELECT</string>
+			<string>HDF_GR_SETATTR</string>
+			<string>HDF_GR_SETCHUNK</string>
+			<string>HDF_GR_SETCHUNKCACHE</string>
+			<string>HDF_GR_SETCOMPRESS</string>
+			<string>HDF_GR_SETEXTERNALFILE</string>
+			<string>HDF_GR_START</string>
+			<string>HDF_GR_WRITEIMAGE</string>
+			<string>HDF_GR_WRITELUT</string>
+			<string>HDF_HDF2IDLTYPE</string>
+			<string>HDF_IDL2HDFTYPE</string>
+			<string>HDF_ISHDF</string>
+			<string>HDF_LIB_INFO</string>
+			<string>HDF_NEWREF</string>
+			<string>HDF_NUMBER</string>
+			<string>HDF_OPEN</string>
+			<string>HDF_PACKDATA</string>
 			<string>HDF_READ</string>
+			<string>HDF_SD_ADDDATA</string>
+			<string>HDF_SD_ATTRFIND</string>
+			<string>HDF_SD_ATTRINFO</string>
+			<string>HDF_SD_ATTRSET</string>
+			<string>HDF_SD_CREATE</string>
+			<string>HDF_SD_DIMGET</string>
+			<string>HDF_SD_DIMGETID</string>
+			<string>HDF_SD_DIMSET</string>
+			<string>HDF_SD_END</string>
+			<string>HDF_SD_ENDACCESS</string>
+			<string>HDF_SD_FILEINFO</string>
+			<string>HDF_SD_GETDATA</string>
+			<string>HDF_SD_GETINFO</string>
+			<string>HDF_SD_IDTOREF</string>
+			<string>HDF_SD_ISCOORDVAR</string>
+			<string>HDF_SD_NAMETOINDEX</string>
+			<string>HDF_SD_REFTOINDEX</string>
+			<string>HDF_SD_SELECT</string>
+			<string>HDF_SD_SETCOMPRESS</string>
+			<string>HDF_SD_SETEXTFILE</string>
+			<string>HDF_SD_SETINFO</string>
+			<string>HDF_SD_START</string>
+			<string>HDF_UNPACKDATA</string>
+			<string>HDF_VD_ATTACH</string>
+			<string>HDF_VD_ATTRFIND</string>
+			<string>HDF_VD_ATTRINFO</string>
+			<string>HDF_VD_ATTRSET</string>
+			<string>HDF_VD_DETACH</string>
+			<string>HDF_VD_FDEFINE</string>
+			<string>HDF_VD_FEXIST</string>
+			<string>HDF_VD_FIND</string>
+			<string>HDF_VD_GET</string>
+			<string>HDF_VD_GETID</string>
+			<string>HDF_VD_GETINFO</string>
+			<string>HDF_VD_INSERT</string>
+			<string>HDF_VD_ISATTR</string>
+			<string>HDF_VD_ISVD</string>
+			<string>HDF_VD_ISVG</string>
+			<string>HDF_VD_LONE</string>
+			<string>HDF_VD_NATTRS</string>
+			<string>HDF_VD_READ</string>
+			<string>HDF_VD_SEEK</string>
+			<string>HDF_VD_SETINFO</string>
+			<string>HDF_VD_WRITE</string>
+			<string>HDF_VG_ADDTR</string>
+			<string>HDF_VG_ATTACH</string>
+			<string>HDF_VG_DETACH</string>
+			<string>HDF_VG_GETID</string>
+			<string>HDF_VG_GETINFO</string>
+			<string>HDF_VG_GETNEXT</string>
+			<string>HDF_VG_GETTR</string>
+			<string>HDF_VG_GETTRS</string>
+			<string>HDF_VG_INQTR</string>
+			<string>HDF_VG_INSERT</string>
+			<string>HDF_VG_ISVD</string>
+			<string>HDF_VG_ISVG</string>
+			<string>HDF_VG_LONE</string>
+			<string>HDF_VG_NUMBER</string>
+			<string>HDF_VG_SETINFO</string>
 			<string>HEAP_FREE</string>
 			<string>HEAP_GC</string>
+			<string>HEAP_NOSAVE</string>
+			<string>HEAP_REFCOUNT</string>
+			<string>HEAP_SAVE</string>
 			<string>HELP</string>
 			<string>HILBERT</string>
 			<string>HISTOGRAM</string>
@@ -1012,14 +2138,27 @@
 			<string>HSV</string>
 			<string>H_EQ_CT</string>
 			<string>H_EQ_INT</string>
+			<string>I18N_MULTIBYTETOUTF8</string>
+			<string>I18N_MULTIBYTETOWIDECHAR</string>
+			<string>I18N_UTF8TOMULTIBYTE</string>
+			<string>I18N_WIDECHARTOMULTIBYTE</string>
 			<string>IBETA</string>
 			<string>ICONTOUR</string>
+			<string>ICONVERTCOORD</string>
+			<string>IDELETE</string>
 			<string>IDENTITY</string>
+			<string>IDLEXBR_ASSISTANT</string>
 			<string>IDLITSYS_CREATETOOL</string>
+			<string>IDL_BASE64</string>
 			<string>IDL_VALIDNAME</string>
-			<string>IF</string>
+			<string>IELLIPSE</string>
 			<string>IGAMMA</string>
+			<string>IGETCURRENT</string>
+			<string>IGETDATA</string>
+			<string>IGETID</string>
+			<string>IGETPROPERTY</string>
 			<string>IIMAGE</string>
+			<string>IMAGE</string>
 			<string>IMAGE_CONT</string>
 			<string>IMAGE_STATISTICS</string>
 			<string>IMAGINARY</string>
@@ -1034,19 +2173,35 @@
 			<string>INT_TABULATED</string>
 			<string>INVERT</string>
 			<string>IOCTL</string>
+			<string>IOPEN</string>
 			<string>IPLOT</string>
+			<string>IPOLYGON</string>
+			<string>IPOLYLINE</string>
+			<string>IPUTDATA</string>
+			<string>IREGISTER</string>
+			<string>IRESET</string>
+			<string>IRESOLVE</string>
+			<string>IROTATE</string>
+			<string>IR_FILTER</string>
+			<string>ISA</string>
+			<string>ISAVE</string>
+			<string>ISCALE</string>
+			<string>ISETCURRENT</string>
+			<string>ISETPROPERTY</string>
 			<string>ISHFT</string>
 			<string>ISOCONTOUR</string>
 			<string>ISOSURFACE</string>
 			<string>ISURFACE</string>
-			<string>ITCURRENT</string>
-			<string>ITDELETE</string>
-			<string>ITGETCURRENT</string>
-			<string>ITREGISTER</string>
-			<string>ITRESET</string>
-			<string>ITRESOLVE</string>
+			<string>ITEXT</string>
+			<string>ITRANSLATE</string>
+			<string>IVECTOR</string>
 			<string>IVOLUME</string>
+			<string>IZOOM</string>
+			<string>I_BETA</string>
 			<string>JOURNAL</string>
+			<string>JSON_PARSE</string>
+			<string>JSON_SERIALIZE</string>
+			<string>JUL2GREG</string>
 			<string>JULDAY</string>
 			<string>KEYWORD_SET</string>
 			<string>KRIG2D</string>
@@ -1057,6 +2212,7 @@
 			<string>LABEL_REGION</string>
 			<string>LADFIT</string>
 			<string>LAGUERRE</string>
+			<string>LAPLACIAN</string>
 			<string>LA_CHOLDC</string>
 			<string>LA_CHOLMPROVE</string>
 			<string>LA_CHOLSOL</string>
@@ -1080,12 +2236,15 @@
 			<string>LA_TRIQL</string>
 			<string>LA_TRIRED</string>
 			<string>LA_TRISOL</string>
+			<string>LEAST_SQUARES_FILTER</string>
 			<string>LEEFILT</string>
+			<string>LEGEND</string>
 			<string>LEGENDRE</string>
 			<string>LINBCG</string>
 			<string>LINDGEN</string>
 			<string>LINFIT</string>
 			<string>LINKIMAGE</string>
+			<string>LIST</string>
 			<string>LL_ARC_DISTANCE</string>
 			<string>LMFIT</string>
 			<string>LMGR</string>
@@ -1108,6 +2267,10 @@
 			<string>MACHAR</string>
 			<string>MAKE_ARRAY</string>
 			<string>MAKE_DLL</string>
+			<string>MAKE_RT</string>
+			<string>MAP</string>
+			<string>MAPCONTINENTS</string>
+			<string>MAPGRID</string>
 			<string>MAP_2POINTS</string>
 			<string>MAP_CONTINENTS</string>
 			<string>MAP_GRID</string>
@@ -1125,6 +2288,7 @@
 			<string>MD_TEST</string>
 			<string>MEAN</string>
 			<string>MEANABSDEV</string>
+			<string>MEAN_FILTER</string>
 			<string>MEDIAN</string>
 			<string>MEMORY</string>
 			<string>MESH_CLIP</string>
@@ -1150,13 +2314,46 @@
 			<string>MORPH_OPEN</string>
 			<string>MORPH_THIN</string>
 			<string>MORPH_TOPHAT</string>
-			<string>MPEG_CLOSE</string>
-			<string>MPEG_OPEN</string>
-			<string>MPEG_PUT</string>
-			<string>MPEG_SAVE</string>
 			<string>MULTI</string>
 			<string>M_CORRELATE</string>
+			<string>NCDF_ATTCOPY</string>
+			<string>NCDF_ATTDEL</string>
+			<string>NCDF_ATTGET</string>
+			<string>NCDF_ATTINQ</string>
+			<string>NCDF_ATTNAME</string>
+			<string>NCDF_ATTPUT</string>
+			<string>NCDF_ATTRENAME</string>
+			<string>NCDF_CLOSE</string>
+			<string>NCDF_CONTROL</string>
+			<string>NCDF_CREATE</string>
+			<string>NCDF_DIMDEF</string>
+			<string>NCDF_DIMID</string>
+			<string>NCDF_DIMIDSINQ</string>
+			<string>NCDF_DIMINQ</string>
+			<string>NCDF_DIMRENAME</string>
+			<string>NCDF_EXISTS</string>
+			<string>NCDF_FULLGROUPNAME</string>
+			<string>NCDF_GROUPDEF</string>
+			<string>NCDF_GROUPNAME</string>
+			<string>NCDF_GROUPPARENT</string>
+			<string>NCDF_GROUPSINQ</string>
+			<string>NCDF_INQUIRE</string>
+			<string>NCDF_NCIDINQ</string>
+			<string>NCDF_OPEN</string>
+			<string>NCDF_UNLIMDIMSINQ</string>
+			<string>NCDF_VARDEF</string>
+			<string>NCDF_VARGET</string>
+			<string>NCDF_VARGET1</string>
+			<string>NCDF_VARID</string>
+			<string>NCDF_VARIDSINQ</string>
+			<string>NCDF_VARINQ</string>
+			<string>NCDF_VARPUT</string>
+			<string>NCDF_VARRENAME</string>
 			<string>NEWTON</string>
+			<string>NOISE_HURL</string>
+			<string>NOISE_PICK</string>
+			<string>NOISE_SCATTER</string>
+			<string>NOISE_SLUR</string>
 			<string>NORM</string>
 			<string>N_ELEMENTS</string>
 			<string>N_PARAMS</string>
@@ -1164,33 +2361,36 @@
 			<string>OBJARR</string>
 			<string>OBJ_CLASS</string>
 			<string>OBJ_DESTROY</string>
+			<string>OBJ_HASMETHOD</string>
 			<string>OBJ_ISA</string>
 			<string>OBJ_NEW</string>
 			<string>OBJ_VALID</string>
 			<string>ONLINE_HELP</string>
-			<string>ONLINE_HELP_PDF_INDEX</string>
 			<string>ON_ERROR</string>
-			<string>ON_IOERROR</string>
-			<string>OPENR</string>
-			<string>OPENW</string>
+			<string>OPEN</string>
 			<string>OPLOT</string>
 			<string>OPLOTERR</string>
+			<string>PARSE_URL</string>
 			<string>PARTICLE_TRACE</string>
 			<string>PATH_CACHE</string>
 			<string>PATH_SEP</string>
 			<string>PCOMP</string>
 			<string>PLOT</string>
+			<string>PLOT3D</string>
 			<string>PLOTERR</string>
 			<string>PLOTS</string>
 			<string>PLOT_3DBOX</string>
 			<string>PLOT_FIELD</string>
 			<string>PNT_LINE</string>
 			<string>POINT_LUN</string>
+			<string>POLARPLOT</string>
 			<string>POLAR_CONTOUR</string>
 			<string>POLAR_SURFACE</string>
 			<string>POLY</string>
 			<string>POLYFILL</string>
 			<string>POLYFILLV</string>
+			<string>POLYGON</string>
+			<string>POLYLINE</string>
 			<string>POLYSHADE</string>
 			<string>POLYWARP</string>
 			<string>POLY_2D</string>
@@ -1198,11 +2398,13 @@
 			<string>POLY_FIT</string>
 			<string>POPD</string>
 			<string>POWELL</string>
+			<string>PREF_COMMIT</string>
+			<string>PREF_GET</string>
+			<string>PREF_SET</string>
+			<string>PREWITT</string>
 			<string>PRIMES</string>
 			<string>PRINT</string>
 			<string>PRINTD</string>
-			<string>PRINTF</string>
-			<string>PRO</string>
 			<string>PRODUCT</string>
 			<string>PROFILE</string>
 			<string>PROFILER</string>
@@ -1222,7 +2424,9 @@
 			<string>QROMB</string>
 			<string>QROMO</string>
 			<string>QSIMP</string>
+			<string>QUERY_ASCII</string>
 			<string>QUERY_BMP</string>
+			<string>QUERY_CSV</string>
 			<string>QUERY_DICOM</string>
 			<string>QUERY_GIF</string>
 			<string>QUERY_IMAGE</string>
@@ -1241,12 +2445,12 @@
 			<string>RANKS</string>
 			<string>RDPIX</string>
 			<string>READ</string>
-			<string>READF</string>
 			<string>READS</string>
 			<string>READU</string>
 			<string>READ_ASCII</string>
 			<string>READ_BINARY</string>
 			<string>READ_BMP</string>
+			<string>READ_CSV</string>
 			<string>READ_DICOM</string>
 			<string>READ_GIF</string>
 			<string>READ_IMAGE</string>
@@ -1274,7 +2478,6 @@
 			<string>REGION_GROW</string>
 			<string>REGISTER_CURSOR</string>
 			<string>REGRESS</string>
-			<string>REPEAT</string>
 			<string>REPLICATE</string>
 			<string>REPLICATE_INPLACE</string>
 			<string>RESOLVE_ALL</string>
@@ -1288,6 +2491,7 @@
 			<string>ROT</string>
 			<string>ROTATE</string>
 			<string>ROUND</string>
+			<string>ROUTINE_FILEPATH</string>
 			<string>ROUTINE_INFO</string>
 			<string>RS_TEST</string>
 			<string>R_CORRELATE</string>
@@ -1297,12 +2501,16 @@
 			<string>SCALE3</string>
 			<string>SCALE3D</string>
 			<string>SCOPE_LEVEL</string>
+			<string>SCOPE_TRACEBACK</string>
 			<string>SCOPE_VARFETCH</string>
 			<string>SCOPE_VARNAME</string>
 			<string>SEARCH2D</string>
 			<string>SEARCH3D</string>
+			<string>SEM_CREATE</string>
+			<string>SEM_DELETE</string>
+			<string>SEM_LOCK</string>
+			<string>SEM_RELEASE</string>
 			<string>SETENV</string>
-			<string>SETUP_KEYS</string>
 			<string>SET_PLOT</string>
 			<string>SET_SHADING</string>
 			<string>SFIT</string>
@@ -1310,6 +2518,7 @@
 			<string>SHADE_SURF_IRR</string>
 			<string>SHADE_VOLUME</string>
 			<string>SHIFT</string>
+			<string>SHIFT_DIFF</string>
 			<string>SHMDEBUG</string>
 			<string>SHMMAP</string>
 			<string>SHMUNMAP</string>
@@ -1372,7 +2581,7 @@
 			<string>SVSOL</string>
 			<string>SWAP_ENDIAN</string>
 			<string>SWAP_ENDIAN_INPLACE</string>
-			<string>SWITCH</string>
+			<string>SYMBOL</string>
 			<string>SYSTIME</string>
 			<string>S_TEST</string>
 			<string>T3D</string>
@@ -1384,6 +2593,7 @@
 			<string>TETRA_CLIP</string>
 			<string>TETRA_SURFACE</string>
 			<string>TETRA_VOLUME</string>
+			<string>TEXT</string>
 			<string>THIN</string>
 			<string>THREED</string>
 			<string>TIMEGEN</string>
@@ -1408,7 +2618,8 @@
 			<string>TVLCT</string>
 			<string>TVRD</string>
 			<string>TVSCL</string>
-			<string>T_CVF</string>
+			<string>TYPENAME</string>
+			<string>T_CVT</string>
 			<string>T_PDF</string>
 			<string>UINDGEN</string>
 			<string>UINT</string>
@@ -1424,6 +2635,7 @@
 			<string>USERSYM</string>
 			<string>VALUE_LOCATE</string>
 			<string>VARIANCE</string>
+			<string>VECTOR</string>
 			<string>VECTOR_FIELD</string>
 			<string>VEL</string>
 			<string>VELOVECT</string>
@@ -1437,13 +2649,11 @@
 			<string>WDELETE</string>
 			<string>WF_DRAW</string>
 			<string>WHERE</string>
-			<string>WHILE</string>
-			<string>WIDGET_ACTIVEX</string>
 			<string>WIDGET_BASE</string>
 			<string>WIDGET_BUTTON</string>
 			<string>WIDGET_COMBOBOX</string>
 			<string>WIDGET_CONTROL</string>
-			<string>WIDGET_DISPLAYCONTEXTMENU</string>
+			<string>WIDGET_DISPLAYCONTEXTMEN</string>
 			<string>WIDGET_DRAW</string>
 			<string>WIDGET_DROPLIST</string>
 			<string>WIDGET_EVENT</string>
@@ -1456,9 +2666,13 @@
 			<string>WIDGET_TABLE</string>
 			<string>WIDGET_TEXT</string>
 			<string>WIDGET_TREE</string>
+			<string>WIDGET_TREE_MOVE</string>
+			<string>WIDGET_WINDOW</string>
+			<string>WIENER_FILTER</string>
 			<string>WINDOW</string>
 			<string>WRITEU</string>
 			<string>WRITE_BMP</string>
+			<string>WRITE_CSV</string>
 			<string>WRITE_GIF</string>
 			<string>WRITE_IMAGE</string>
 			<string>WRITE_JPEG</string>
@@ -1476,6 +2690,24 @@
 			<string>WSET</string>
 			<string>WSHOW</string>
 			<string>WTN</string>
+			<string>WV_APPLET</string>
+			<string>WV_CWT</string>
+			<string>WV_CW_WAVELET</string>
+			<string>WV_DENOISE</string>
+			<string>WV_DWT</string>
+			<string>WV_FN_COIFLET</string>
+			<string>WV_FN_DAUBECHIES</string>
+			<string>WV_FN_GAUSSIAN</string>
+			<string>WV_FN_HAAR</string>
+			<string>WV_FN_MORLET</string>
+			<string>WV_FN_PAUL</string>
+			<string>WV_FN_SYMLET</string>
+			<string>WV_IMPORT_DATA</string>
+			<string>WV_IMPORT_WAVELET</string>
+			<string>WV_PLOT3D_WPS</string>
+			<string>WV_PLOT_MULTIRES</string>
+			<string>WV_PWT</string>
+			<string>WV_TOOL_DENOISE</string>
 			<string>XBM_EDIT</string>
 			<string>XDISPLAYFILE</string>
 			<string>XDXF</string>
