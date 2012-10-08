@@ -6,6 +6,8 @@
 	<array>
 		<string>pro</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>-[*]-( Mode:)? IDL -[*]-</string>
 	<key>isDisabled</key>
 	<false/>
 	<key>keyEquivalent</key>
