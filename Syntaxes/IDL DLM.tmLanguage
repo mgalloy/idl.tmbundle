@@ -36,7 +36,7 @@
 				<dict>
 					<key>captures</key>
 					<dict>
-						<key>1</key>
+						<key>0</key>
 						<dict>
 							<key>name</key>
 							<string>meta.toc-list.banner.line.idl-dlm</string>

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Symbols</string>
+	<string>DLM symbols</string>
 	<key>scope</key>
-	<string>meta.toc-list.banner.line.idl</string>
+	<string>meta.toc-list.banner.line.idl-dlm</string>
 	<key>settings</key>
 	<dict>
 		<key>symbolTransformation</key>
 		<string>
-    s/^(.*)/--- $1 ---/;
+    s/^#=\s*(.*)/--- $1 ---/;
   </string>
 	</dict>
 	<key>uuid</key>
-	<string>983559DD-DEE3-4919-9D04-F8FD626B512F</string>
+	<string>6233811B-6765-40CF-887F-C7510D4D5347</string>
 </dict>
 </plist>
