@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Symbol prefs</string>
+	<string>Symbols</string>
 	<key>scope</key>
 	<string>meta.toc-list.banner.line.idl</string>
 	<key>settings</key>

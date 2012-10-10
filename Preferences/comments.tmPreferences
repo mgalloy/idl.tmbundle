@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>IDL comments prefs</string>
+	<string>Comments</string>
 	<key>scope</key>
 	<string>comment.line.semicolon.idl, comment.idl.idldoc</string>
 	<key>settings</key>
