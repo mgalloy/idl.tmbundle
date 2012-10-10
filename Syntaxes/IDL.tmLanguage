@@ -119,10 +119,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#parens</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#float</string>
 		</dict>
 		<dict>
@@ -164,18 +160,6 @@
 		<dict>
 			<key>include</key>
 			<string>#variable</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#variable_invalid</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#not_equal_invalid</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#variable_assignment</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -265,10 +249,6 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#parens</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#curlybrackets</string>
 				</dict>
 				<dict>
@@ -294,10 +274,6 @@
 				<dict>
 					<key>include</key>
 					<string>#variable</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#variable_invalid</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -432,7 +408,7 @@
 			<key>comment</key>
 			<string>Operator keywords</string>
 			<key>match</key>
-			<string>(?i)(?&lt;!\.)+\s(and|eq|ge|gt|le|lt|mod|ne|not|or|xor)\s</string>
+			<string>(?i)\b(and|eq|ge|gt|le|lt|mod|ne|not|or|xor)\b</string>
 			<key>name</key>
 			<string>keyword.operator.idl</string>
 		</dict>
@@ -489,42 +465,6 @@
 			<string>(?i)(&gt;|&lt;|&amp;&amp;|\?|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)</string>
 			<key>name</key>
 			<string>keyword.operator.symbols.idl</string>
-		</dict>
-		<key>parens</key>
-		<dict>
-			<key>begin</key>
-			<string>\(</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>meta.parens.idl</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>meta.parens.idl</string>
-			<key>end</key>
-			<string>\)</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>meta.parens.idl</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#allofem</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#end_in_parens</string>
-				</dict>
-			</array>
 		</dict>
 		<key>special_characters</key>
 		<dict>
@@ -594,25 +534,7 @@
 			<key>match</key>
 			<string>\b[_a-zA-Z][_a-zA-Z0-9$]*\b</string>
 			<key>name</key>
-			<string>meta.variable.other.valid.idl</string>
-		</dict>
-		<key>variable_assignment</key>
-		<dict>
-			<key>comment</key>
-			<string>Incomplete variable assignment.</string>
-			<key>match</key>
-			<string>=\s*\.{0,2}\s*;?\s*$\n?</string>
-			<key>name</key>
-			<string>invalid.illegal.incomplete-variable-assignment.idl</string>
-		</dict>
-		<key>variable_invalid</key>
-		<dict>
-			<key>comment</key>
-			<string>No variables or function names can start with a number or an dollar sign.</string>
-			<key>match</key>
-			<string>\b(\$\w|\d+[_a-df-zA-DF-Z])\w*\b</string>
-			<key>name</key>
-			<string>invalid.illegal.invalid-variable-name.idl</string>
+			<string>variable.other.valid.idl</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>

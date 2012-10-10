@@ -1006,6 +1006,9 @@
 			<string>online_help</string>
 			<string>on_error</string>
 			<string>open</string>
+			<string>openr</string>
+			<string>openu</string>
+			<string>openw</string>
 			<string>oplot</string>
 			<string>oploterr</string>
 			<string>parse_url</string>
@@ -1043,6 +1046,7 @@
 			<string>primes</string>
 			<string>print</string>
 			<string>printd</string>
+			<string>printf</string>
 			<string>product</string>
 			<string>profile</string>
 			<string>profiler</string>
@@ -1083,6 +1087,7 @@
 			<string>ranks</string>
 			<string>rdpix</string>
 			<string>read</string>
+			<string>readf</string>
 			<string>reads</string>
 			<string>readu</string>
 			<string>read_ascii</string>
@@ -2368,6 +2373,9 @@
 			<string>ONLINE_HELP</string>
 			<string>ON_ERROR</string>
 			<string>OPEN</string>
+			<string>OPENR</string>
+			<string>OPENU</string>
+			<string>OPENW</string>
 			<string>OPLOT</string>
 			<string>OPLOTERR</string>
 			<string>PARSE_URL</string>
@@ -2405,6 +2413,7 @@
 			<string>PRIMES</string>
 			<string>PRINT</string>
 			<string>PRINTD</string>
+			<string>PRINTF</string>
 			<string>PRODUCT</string>
 			<string>PROFILE</string>
 			<string>PROFILER</string>
@@ -2445,6 +2454,7 @@
 			<string>RANKS</string>
 			<string>RDPIX</string>
 			<string>READ</string>
+			<string>READF</string>
 			<string>READS</string>
 			<string>READU</string>
 			<string>READ_ASCII</string>
