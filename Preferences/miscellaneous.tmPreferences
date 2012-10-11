@@ -11,9 +11,7 @@
 		<key>decreaseIndentPattern</key>
 		<string>\b(?i:(end|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile))\b</string>
 		<key>disableDefaultCompletion</key>
-		<integer>1</integer>
-		<key>disableIndentCorrections</key>
-		<string>1</string>
+		<integer>0</integer>
 		<key>highlightPairs</key>
 		<array>
 			<array>
@@ -31,6 +29,8 @@
 		</array>
 		<key>increaseIndentPattern</key>
 		<string>\b(?i:(begin|pro|function|of))\b</string>
+		<key>indentNextLinePattern</key>
+		<string>\$</string>
 		<key>indentOnPaste</key>
 		<string>simple</string>
 		<key>shellVariables</key>
