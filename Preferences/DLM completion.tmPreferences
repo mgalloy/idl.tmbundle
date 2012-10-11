@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>DLM completion</string>
+	<key>scope</key>
+	<string>source.idl-dlm</string>
+	<key>settings</key>
+	<dict>
+		<key>completions</key>
+		<array>
+			<string>function</string>
+			<string>procedure</string>
+			<string>module</string>
+			<string>description</string>
+			<string>version</string>
+			<string>source</string>
+			<string>build_date</string>
+			<string>checksum</string>
+			<string>idl_maxparams</string>
+			<string>keywords</string>
+			<string>obsolete</string>
+			<string>FUNCTION</string>
+			<string>PROCEDURE</string>
+			<string>MODULE</string>
+			<string>DESCRIPTION</string>
+			<string>VERSION</string>
+			<string>SOURCE</string>
+			<string>BUILD_DATE</string>
+			<string>CHECKSUM</string>
+			<string>IDL_MAXPARAMS</string>
+			<string>KEYWORDS</string>
+			<string>OBSOLETE</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>0A6A0A87-6885-409B-9833-DB97FBCF2141</string>
+</dict>
+</plist>
