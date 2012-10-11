@@ -17,55 +17,6 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>begin</key>
-			<string>(?x)
-(?=(function|pro)\b) # borrowed from ruby bundle
-(?&lt;=^|\s)(function|pro)\s+ # the function keyword
-(?&gt;\[(.*)\])?\t# match various different combination of output arguments
-((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*))?
-(?&gt;\s*=\s*)?
-((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*(?&gt;[?!]|=(?!&gt;))? )) # the function name
-(?=[ \t]*[^\s%|#]) # make sure arguments and not a comment follow
-\s*(\() # the opening parenthesis for arguments</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type.idl</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.output.function.idl</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.output.function.idl</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.idl</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>variable.parameter.input.function.idl</string>
-			<key>end</key>
-			<string>\)</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.parameters.idl</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.function.with-arguments.idl</string>
-		</dict>
-		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -95,15 +46,16 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?x)
+			<string>(?ix)
 (?=(function|pro)\b) # borrowed from ruby bundle
 (?&lt;=^|\s)(function|pro)\s+ # the function keyword
 (?&gt;\[(.*)\])? # match various different combination of output arguments
 ((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*))?
 (?&gt;\s*=\s*)?
-((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*(::[a-zA-Z_][a-zA-Z_$0-9]*)?(?&gt;[?!]|=(?!&gt;))? )) # the function name</string>
+((?&gt;[a-zA-Z_][a-zA-Z_$0-9]*(::[a-zA-Z_][a-zA-Z_$0-9]*)?(?&gt;[?!]|=(?!&gt;))? )) # the function name
+</string>
 			<key>name</key>
-			<string>meta.function.without-arguments.idl</string>
+			<string>meta.function.idl</string>
 		</dict>
 		<dict>
 			<key>include</key>
