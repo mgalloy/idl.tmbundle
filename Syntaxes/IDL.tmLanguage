@@ -127,18 +127,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#binary_integer</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#octal_integer</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#hex_integer</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#string</string>
 		</dict>
 		<dict>
@@ -152,10 +140,6 @@
 		<dict>
 			<key>include</key>
 			<string>#all_idl_comments</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#idl_keyword_operator</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -214,11 +198,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#idl_operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#idl_storage_type</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#idl_sysvar_language</string>
+					<string>#idl_sysvar</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -266,14 +254,6 @@
 					<key>include</key>
 					<string>#integer</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#idl_keyword_operator</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#operators</string>
-				</dict>
 			</array>
 		</dict>
 		<key>brackets</key>
@@ -308,15 +288,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>constants_override</key>
-		<dict>
-			<key>comment</key>
-			<string>The user is trying to override IDL constants and functions.</string>
-			<key>match</key>
-			<string>(^|\;)\s*(inf|Inf|nan|NaN|eps|end)\s*=[^=]</string>
-			<key>name</key>
-			<string>meta.inappropriate.idl</string>
-		</dict>
 		<key>end_in_parens</key>
 		<dict>
 			<key>comment</key>
@@ -332,9 +303,15 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>''</string>
+					<string>\\(\\|[abefnprtv'"?]|[0-3]\d{,2}|[4-7]\d?|x[a-zA-Z0-9]+)</string>
 					<key>name</key>
 					<string>constant.character.escape.idl</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\.</string>
+					<key>name</key>
+					<string>invalid.illegal.unknown-escape.idl</string>
 				</dict>
 			</array>
 		</dict>
@@ -365,6 +342,15 @@
 			<key>name</key>
 			<string>keyword.operator.idl</string>
 		</dict>
+		<key>idl_operator</key>
+		<dict>
+			<key>comment</key>
+			<string>Operator symbols</string>
+			<key>match</key>
+			<string>(?i)(&gt;|&lt;|&amp;&amp;|\?|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)</string>
+			<key>name</key>
+			<string>keyword.operator.symbols.idl</string>
+		</dict>
 		<key>idl_storage_type</key>
 		<dict>
 			<key>comment</key>
@@ -383,12 +369,12 @@
 			<key>name</key>
 			<string>support.function.idl</string>
 		</dict>
-		<key>idl_sysvar_language</key>
+		<key>idl_sysvar</key>
 		<dict>
 			<key>comment</key>
 			<string>IDL system variables</string>
 			<key>match</key>
-			<string>\b\![A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z_][A-Za-z0-9_]*)*\b</string>
+			<string>\s\![A-Za-z_][A-Za-z0-9_$]*(\.[A-Za-z_][A-Za-z0-9_$]*)*\b</string>
 			<key>name</key>
 			<string>constant.language.idl</string>
 		</dict>
@@ -438,24 +424,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>operators</key>
-		<dict>
-			<key>comment</key>
-			<string>Operator symbols</string>
-			<key>match</key>
-			<string>(?i)(&gt;|&lt;|&amp;&amp;|\?|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)</string>
-			<key>name</key>
-			<string>keyword.operator.symbols.idl</string>
-		</dict>
-		<key>special_characters</key>
-		<dict>
-			<key>comment</key>
-			<string>Operator symbols</string>
-			<key>match</key>
-			<string>((\%([\+\-0]?\d{0,3}(\.\d{1,3})?)(c|d|e|E|f|g|G|s|((b|t)?(o|u|x|X))))|\%\%|\\(b|f|n|r|t|\\))</string>
-			<key>name</key>
-			<string>constant.character.escape.idl</string>
-		</dict>
 		<key>string</key>
 		<dict>
 			<key>begin</key>
@@ -480,33 +448,6 @@
 			</dict>
 			<key>name</key>
 			<string>string.quoted.idl</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#escaped_quote</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#unescaped_quote</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#special_characters</string>
-				</dict>
-			</array>
-		</dict>
-		<key>unescaped_quote</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>'(?=.)</string>
-					<key>name</key>
-					<string>invalid.illegal.unescaped-quote.idl</string>
-				</dict>
-			</array>
 		</dict>
 		<key>variable</key>
 		<dict>
@@ -515,7 +456,7 @@
 			<key>match</key>
 			<string>\b[_a-zA-Z][_a-zA-Z0-9$]*\b</string>
 			<key>name</key>
-			<string>variable.other.valid.idl</string>
+			<string>meta.variable.other.valid.idl</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
