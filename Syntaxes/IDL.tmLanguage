@@ -178,42 +178,25 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^;=\s*(.*?)\s*$\n?</string>
+					<string>^\s*;=\s*(.*?)\s*$\n?</string>
 					<key>name</key>
 					<string>comment.line.banner.idl</string>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(^[ \t]+)?(?=;)</string>
+					<string>;</string>
 					<key>beginCaptures</key>
 					<dict>
-						<key>1</key>
+						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.whitespace.comment.leading.idl</string>
+							<string>punctuation.definition.comment.idl</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?!\G)</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>begin</key>
-							<string>;</string>
-							<key>beginCaptures</key>
-							<dict>
-								<key>0</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.definition.comment.idl</string>
-								</dict>
-							</dict>
-							<key>end</key>
-							<string>\n</string>
-							<key>name</key>
-							<string>comment.line.semicolon.idl</string>
-						</dict>
-					</array>
+					<string>\n</string>
+					<key>name</key>
+					<string>comment.line.semicolon.idl</string>
 				</dict>
 			</array>
 		</dict>
@@ -285,18 +268,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#binary_integer</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#octal_integer</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#hex_integer</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#idl_keyword_operator</string>
 				</dict>
 				<dict>
@@ -304,15 +275,6 @@
 					<string>#operators</string>
 				</dict>
 			</array>
-		</dict>
-		<key>binary_integer</key>
-		<dict>
-			<key>comment</key>
-			<string>Valid numbers: '1001'b</string>
-			<key>match</key>
-			<string>(?i)'[01]+'b\b</string>
-			<key>name</key>
-			<string>constant.numeric.idl</string>
 		</dict>
 		<key>brackets</key>
 		<dict>
@@ -381,16 +343,7 @@
 			<key>comment</key>
 			<string>Valid numbers: .1, 1.1, .1e1, 1.1e1, 1e1, .1d1, 1.1d1, 1d1</string>
 			<key>match</key>
-			<string>(?i)\b\d*\.?\d+([ed][+-]?)?\d*\b</string>
-			<key>name</key>
-			<string>constant.numeric.idl</string>
-		</dict>
-		<key>hex_integer</key>
-		<dict>
-			<key>comment</key>
-			<string>Valid numbers: 'AF'x</string>
-			<key>match</key>
-			<string>(?i)'[0-9a-f]+'x\b</string>
+			<string>(?i)\b(\.\d+|\d+\.?\d*)([ed][\+-]?\d*)?\b</string>
 			<key>name</key>
 			<string>constant.numeric.idl</string>
 		</dict>
@@ -441,21 +394,49 @@
 		</dict>
 		<key>integer</key>
 		<dict>
-			<key>comment</key>
-			<string>Valid numbers: 1, 0B, 0S, 0L, 0UL, 0LL, 0ULL</string>
-			<key>match</key>
-			<string>(?i)\b\d+(b|s|l|ul|ll|ull)?\b</string>
-			<key>name</key>
-			<string>constant.numeric.idl</string>
-		</dict>
-		<key>octal_integer</key>
-		<dict>
-			<key>comment</key>
-			<string>Valid numbers: '36'o</string>
-			<key>match</key>
-			<string>(?i)'[0-7]+'o\b</string>
-			<key>name</key>
-			<string>constant.numeric.idl</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>Valid binary integers: '1001'b, '1001'bl, etc.</string>
+					<key>match</key>
+					<string>(?i)'[01]+'b(b|s|u|us|l|ul|ll|ull)?\b</string>
+					<key>name</key>
+					<string>constant.numeric.idl</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Valid decimal integers: 1, 0B, 0S, etc.</string>
+					<key>match</key>
+					<string>(?i)(?&lt;!\.)\b\d+(b|s|u|us|l|ul|ll|ull)?(?!\.)\b</string>
+					<key>name</key>
+					<string>constant.numeric.idl</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Valid octal integers numbers: '36'o, '36'ol, etc.</string>
+					<key>match</key>
+					<string>(?i)'[0-7]+'o(b|s|u|us|l|ul|ll|ull)?\b</string>
+					<key>name</key>
+					<string>constant.numeric.idl</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Valid octal integers: "36, "46l, etc.</string>
+					<key>match</key>
+					<string>(?i)\"[0-7]+(b|s|u|us|l|ul|ll|ull)?\b</string>
+					<key>name</key>
+					<string>constant.numeric.idl</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>Valid hexadecimal integers: 'AF'x</string>
+					<key>match</key>
+					<string>(?i)'[0-9a-f]+'x(b|s|u|us|l|ul|ll|ull)?\b</string>
+					<key>name</key>
+					<string>constant.numeric.idl</string>
+				</dict>
+			</array>
 		</dict>
 		<key>operators</key>
 		<dict>
