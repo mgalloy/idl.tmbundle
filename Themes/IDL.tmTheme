@@ -228,7 +228,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#000000</string>
+				<string>#ff6060</string>
 				<key>foreground</key>
 				<string>#ffffff</string>
 			</dict>
