@@ -39,6 +39,8 @@
 				<string>]</string>
 			</array>
 		</array>
+		<key>softWrap</key>
+		<false/>
 	</dict>
 	<key>uuid</key>
 	<string>04E8A548-F715-4E38-9131-237F14944FAE</string>
