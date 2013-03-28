@@ -374,32 +374,23 @@
 					<key>name</key>
 					<string>constant.numeric.idl</string>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>"</string>
+					<key>end</key>
+					<string>"|$</string>
+					<key>name</key>
+					<string>string.quoted.double.idl</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>'</string>
+					<key>end</key>
+					<string>'|$</string>
+					<key>name</key>
+					<string>string.quoted.single.idl</string>
+				</dict>
 			</array>
-		</dict>
-		<key>string</key>
-		<dict>
-			<key>begin</key>
-			<string>((?&lt;=(\[|\(|\{|=|\s|;|:|,))|^)('|")</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.idl</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(\0|$)(?=(\]|\)|\}|=|~|&lt;|&gt;|&amp;|\||-|\+|\*|\.|\^|\||\s|;|:|,|x|o))</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.idl</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>string.quoted.idl</string>
 		</dict>
 		<key>variable</key>
 		<dict>
