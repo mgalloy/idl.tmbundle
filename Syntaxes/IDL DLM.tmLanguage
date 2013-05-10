@@ -135,7 +135,7 @@
 			<key>comment</key>
 			<string>Routine declaration</string>
 			<key>match</key>
-			<string>(?i)^\s*(function|procedure)\s+([a-zA-Z0-9_$]+)\s+([0-9]+)\s+([0-9]+|IDL_MAXPARAMS)\s+(((keywords|obsolete)\s+)*)</string>
+			<string>(?i)^\s*(function|procedure)\s+([a-zA-Z0-9_$]+:?:?[a-zA-Z0-9_$]*)\s+([0-9]+)\s+([0-9]+|IDL_MAXPARAMS)\s+(((keywords|obsolete)\s+)*)</string>
 		</dict>
 		<key>structure_declaration</key>
 		<dict>
