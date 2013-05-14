@@ -36,6 +36,20 @@
 				<dict>
 					<key>captures</key>
 					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.toc-list.banner.divider.idl-dlm</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>^#(=)\s*$\n</string>
+					<key>name</key>
+					<string>comment.line.banner.divider.idl-dlm</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
 						<key>0</key>
 						<dict>
 							<key>name</key>

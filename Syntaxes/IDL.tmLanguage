@@ -110,6 +110,20 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
+							<string>meta.toc-list.banner.divider.idl</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>^;(=)\s*$\n</string>
+					<key>name</key>
+					<string>comment.line.banner.divider.idl</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
 							<string>meta.toc-list.banner.line.idl</string>
 						</dict>
 					</dict>
