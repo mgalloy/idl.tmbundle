@@ -9,11 +9,13 @@
 ; Definition of ${1} class.
 ;
 ; :Properties:
-;    
+;
 ; :Author:
-;    $TM_FULLNAME
+;   $TM_FULLNAME
 ;-
 
+
+;= Property access
 
 ;+
 ; Set properties.
@@ -28,6 +30,17 @@ end
 ; Get properties.
 ;-
 pro ${1/./\l$0/g}::getProperty
+  compile_opt strictarr
+
+end
+
+
+;= Lifecycle methods
+
+;+
+; Free resources.
+;-
+pro${1/./\l$0/g}::cleanup
   compile_opt strictarr
 
 end
@@ -48,7 +61,7 @@ end
 
 ;+
 ; Define instance variables.
-; 
+;
 ; :Fields:
 ;   $2
 ;-

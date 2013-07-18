@@ -9,13 +9,15 @@
 ; Definition of ${1} class.
 ;
 ; :Properties:
-;    _extra
-;       properties from $2
+;   _extra
+;     properties from $2
 ;
 ; :Author:
-;    $TM_FULLNAME
+;   $TM_FULLNAME
 ;-
 
+
+;= Property access
 
 ;+
 ; Set properties.
@@ -34,6 +36,18 @@ pro ${1/./\l$0/g}::getProperty, _ref_extra=e
   compile_opt strictarr
 
   if (n_elements(e) gt 0L) then self-&gt;$2::getProperty, _extra=e
+end
+
+
+;= Lifecycle methods
+
+;+
+; Free resources.
+;-
+pro ${1/./\l$0/g}::cleanup
+  compile_opt strictarr
+
+  self-&gt;$2::cleanup
 end
 
 
