@@ -29,8 +29,6 @@
 		</array>
 		<key>increaseIndentPattern</key>
 		<string>\b(?i:(begin|pro|function|of))\b</string>
-		<key>indentNextLinePattern</key>
-		<string>\$</string>
 		<key>indentOnPaste</key>
 		<string>simple</string>
 		<key>shellVariables</key>
