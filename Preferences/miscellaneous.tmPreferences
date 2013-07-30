@@ -79,6 +79,8 @@
 				<string>]</string>
 			</array>
 		</array>
+		<key>unIndentedLinePattern</key>
+		<string>^\s*;</string>
 	</dict>
 	<key>uuid</key>
 	<string>96B586DF-0BB8-486C-8FF3-5F8A00941C3A</string>
