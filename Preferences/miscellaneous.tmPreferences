@@ -12,6 +12,8 @@
 		<string>\b(?i:(end|endcase|endelse|endfor|endforeach|endif|endrep|endswitch|endwhile))\b</string>
 		<key>disableDefaultCompletion</key>
 		<integer>0</integer>
+		<key>disableIndentCorrections</key>
+		<true/>
 		<key>highlightPairs</key>
 		<array>
 			<array>
